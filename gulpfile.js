@@ -18,6 +18,10 @@ function clean(){
   return del('./dist')
 }
 
+function movePublicFolder(){
+  return src('./src/public/**').pipe(dest('./dist/public'))
+}
+
 function start(){
   return nodemon({
     script:'./dist/app.js'
@@ -26,6 +30,7 @@ function start(){
 
 exports.build = build
 exports.clean = clean
-exports.start = series(clean,build,parallel(watchBuild,start))
+exports.move = movePublicFolder
+exports.start = series(clean,build,movePublicFolder,parallel(watchBuild,start))
 exports.default = series(clean,build)
 
