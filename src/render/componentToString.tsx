@@ -14,12 +14,13 @@ export function componentToString(element:React.ReactNode,options:TemplateOption
   const styleTags = sheet.getStyleTags();
 
   return `
+  <!DOCTYPE html>
   <html>
     <head>
       ${options.title ? `<title>${options.title}</title>` : ''}
-      <meta name="viewport" content="width=device-width, initial-scale=1"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
       ${options.description ? `<meta name="Description" content=${options.description}/>` : ''}
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
       ${styleTags}
     </head>
     <body>

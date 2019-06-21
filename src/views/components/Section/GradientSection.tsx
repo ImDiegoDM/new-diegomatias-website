@@ -11,6 +11,7 @@ export interface GradientSectionOptions{
   position3?:string;
   deg?:string;
   grainyFactor?:number;
+  className?:string;
 }
 
 interface GradientSectionProps{
@@ -30,14 +31,15 @@ export function GradientSection({
   grainyFactor = 1,
   width,
   children,
-  as
+  as,
+  className
 }:GradientSectionProps & GradientSectionOptions){
   const grainy = grainyFactor*128;
   const Base = styled(BaseSection)`
     background-image: url(public/overlay.png),linear-gradient(${deg}, ${color1} ${position1}, ${color2} ${position2}, ${color3} ${position3});
     background-size: ${grainy}px ${grainy}px, auto;
   `;
-  return <Base as={as} width={width}>
+  return <Base className={className} as={as} width={width}>
     {children}
   </Base>
 }
