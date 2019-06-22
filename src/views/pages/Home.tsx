@@ -31,7 +31,9 @@ export function Home(props:HomeProps){
           <h2>{about.title}</h2>
           <p>{about.description}</p>
         </Section>
-        <Section type={SectionType.gradient} width="45rem">
+        <Section type={SectionType.gradient} width="45rem" gradientOptions={{
+          
+        }}>
           <FlexBox>
             <FlexBasis basis="45%">
               <h2>{knowledge.title}</h2>
