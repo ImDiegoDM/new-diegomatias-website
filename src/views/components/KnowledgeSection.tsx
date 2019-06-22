@@ -22,8 +22,9 @@ const KnowledgeFlex = styled(FlexBox)<{mobileMarginTop?:string}>`
 
 export function KnowledgeSection({knowledge}:KnowledgeSectionProps){
   return <Section type={SectionType.gradient} width="45rem" gradientOptions={{
-    color2:'#b761ad',
-    color3:'#8b75b6'
+    color1:'#79528d',
+    color2:'#af5ca6',
+    color3:'#826ea9'
   }}>
     <KnowledgeFlex>
       <FlexBasis basis="45%">

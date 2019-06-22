@@ -8,7 +8,8 @@ import {
   FlexBasis,
   SectionType, 
   BrandGrid,
-  KnowledgeSection
+  KnowledgeSection,
+  ProjectsSection
 } from '../components';
 import { Introduction,About,Knowledge, ProjectsText } from '../../interfaces'
 
@@ -20,7 +21,7 @@ interface HomeProps{
 }
 
 export function Home(props:HomeProps){
-  const { introduction,about,knowledge } = props;
+  const { introduction,about,knowledge,projectsText } = props;
   return <>
     <GlobalStyle/>
     <Container>
@@ -42,6 +43,7 @@ export function Home(props:HomeProps){
           <p>{about.description}</p>
         </Section>
         <KnowledgeSection knowledge={knowledge}/>
+        <ProjectsSection projectsText={projectsText} />
       </Wrapper>
     </Container>
   </>
