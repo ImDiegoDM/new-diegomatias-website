@@ -10,12 +10,13 @@ import {
   BrandGrid,
   KnowledgeSection
 } from '../components';
-import { Introduction,About,Knowledge } from '../../interfaces'
+import { Introduction,About,Knowledge, ProjectsText } from '../../interfaces'
 
 interface HomeProps{
   introduction:Introduction;
   about:About;
   knowledge:Knowledge;
+  projectsText:ProjectsText;
 }
 
 export function Home(props:HomeProps){
@@ -40,12 +41,7 @@ export function Home(props:HomeProps){
           <h2>{about.title}</h2>
           <p>{about.description}</p>
         </Section>
-        <Section type={SectionType.gradient} width="45rem" gradientOptions={{
-          color2:'#b761ad',
-          color3:'#8b75b6'
-        }}>
-          <KnowledgeSection knowledge={knowledge}/>
-        </Section>
+        <KnowledgeSection knowledge={knowledge}/>
       </Wrapper>
     </Container>
   </>
