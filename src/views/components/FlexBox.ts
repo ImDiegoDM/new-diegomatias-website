@@ -15,6 +15,7 @@ export interface FlexBoxProps {
   justifyContent?: JustifyContent;
   height?: string;
   width?: string;
+  basis?:string;
 }
 
 export const FlexBox = styled.div<FlexBoxProps>`
@@ -25,4 +26,5 @@ export const FlexBox = styled.div<FlexBoxProps>`
   flex-direction: ${(props) => props.directiom || 'row'}
   height: ${(props) => props.height || 'auto'}
   width: ${(props) => props.width || 'auto'}
+  flex-basis: ${({basis}) => basis || 'auto'}
 `;

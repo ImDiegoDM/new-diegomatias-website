@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { GlobalStyle,Container,Wrapper,Section,BannerSection,GradientSection,SectionType } from '../components';
+import { GlobalStyle,Container,Wrapper,Section,BannerSection,FlexBasis,SectionType } from '../components';
 import { Introduction,About,Knowledge } from '../../interfaces'
 import { FlexBox } from '../components/FlexBox';
 
@@ -31,13 +31,13 @@ export function Home(props:HomeProps){
           <h2>{about.title}</h2>
           <p>{about.description}</p>
         </Section>
-        <Section type={SectionType.gradient}>
+        <Section type={SectionType.gradient} width="45rem">
           <FlexBox>
-            <div>
+            <FlexBasis basis="45%">
               <h2>{knowledge.title}</h2>
               <p>{knowledge.description}</p>
-            </div>
-            <div>test</div>
+            </FlexBasis>
+            <FlexBox basis="55%" alignItems="center" justifyContent="center">test</FlexBox>
           </FlexBox>
         </Section>
       </Wrapper>
