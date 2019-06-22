@@ -32,7 +32,8 @@ export function Home(props:HomeProps){
           <p>{about.description}</p>
         </Section>
         <Section type={SectionType.gradient} width="45rem" gradientOptions={{
-          
+          color2:'#b761ad',
+          color3:'#8b75b6'
         }}>
           <FlexBox>
             <FlexBasis basis="45%">

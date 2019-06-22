@@ -32,6 +32,7 @@ const defaultValue = {
 }
 
 export function GradientSection(props:GradientSectionProps & GradientSectionOptions){
+  console.log(props)
   props = {...defaultValue,...props}
   const grainy = props.grainyFactor*128;
   const Base = styled(BaseSection)`
