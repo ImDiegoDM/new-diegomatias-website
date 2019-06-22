@@ -45,7 +45,23 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: #fff;
+    
+    &:after{
+      pointer-events: none;
+      content: '';
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-attachment: fixed;
+      background-color: #e1e6e1;
+      background-image: url(public/overlay.png), url(public/bg.jpg);
+      background-repeat: repeat, repeat-x;
+      background-size: 128px 128px, cover;
+    }
     ${tablet`
       height:100%;
     
