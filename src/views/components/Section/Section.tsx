@@ -25,8 +25,8 @@ const defaultSection:SectionProps = {
   bg:'red'
 }
 
-export function Section(props){
-  
+export function Section(props:SectionProps){
+  props = {...defaultSection,...props}
 
   switch (props.type) {
     case SectionType.image:
