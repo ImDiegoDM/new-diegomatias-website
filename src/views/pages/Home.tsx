@@ -1,14 +1,16 @@
 import * as React from 'react'
 import { GlobalStyle,Container,Wrapper,Section,BannerSection,GradientSection,SectionType } from '../components';
-import { Introduction,About } from '../../interfaces'
+import { Introduction,About,Knowledge } from '../../interfaces'
+import { FlexBox } from '../components/FlexBox';
 
 interface HomeProps{
   introduction:Introduction;
-  about:About
+  about:About;
+  knowledge:Knowledge;
 }
 
 export function Home(props:HomeProps){
-  const { introduction,about } = props;
+  const { introduction,about,knowledge } = props;
   return <>
     <GlobalStyle/>
     <Container>
@@ -28,6 +30,15 @@ export function Home(props:HomeProps){
         }}>
           <h2>{about.title}</h2>
           <p>{about.description}</p>
+        </Section>
+        <Section type={SectionType.gradient}>
+          <FlexBox>
+            <div>
+              <h2>{knowledge.title}</h2>
+              <p>{knowledge.description}</p>
+            </div>
+            <div>test</div>
+          </FlexBox>
         </Section>
       </Wrapper>
     </Container>

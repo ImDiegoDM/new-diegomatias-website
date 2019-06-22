@@ -1,6 +1,6 @@
 import { getJson } from '../db'
-import { About } from '../interfaces'
+import { About, MultiLang } from '../interfaces'
 
-export function getAbout():About{
+export function getAbout():MultiLang<About>{
   return getJson().about
 }

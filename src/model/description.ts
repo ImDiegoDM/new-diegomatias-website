@@ -1,6 +1,6 @@
 import { getJson } from '../db'
-import { Introduction } from '../interfaces'
+import { Introduction, MultiLang } from '../interfaces'
 
-export function getIntroduction():Introduction{
+export function getIntroduction():MultiLang<Introduction>{
   return getJson().introduction
 }

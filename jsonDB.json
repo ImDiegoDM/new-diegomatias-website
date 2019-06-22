@@ -17,5 +17,11 @@
       "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
       "imageUrl":"public/apple-code-codes-574069.jpg"
     }
+  },
+  "knowledge":{
+    "pt-br":{
+      "title":"Principais Conhecimentos",
+      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+    }
   }
 }
