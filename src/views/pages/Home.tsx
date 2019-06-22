@@ -1,7 +1,16 @@
 import * as React from 'react'
-import { GlobalStyle,Container,Wrapper,Section,BannerSection,FlexBasis,SectionType } from '../components';
+import { 
+  GlobalStyle,
+  Container,
+  Wrapper,
+  Section,
+  BannerSection,
+  FlexBasis,
+  SectionType, 
+  BrandGrid,
+  KnowledgeSection
+} from '../components';
 import { Introduction,About,Knowledge } from '../../interfaces'
-import { FlexBox } from '../components/FlexBox';
 
 interface HomeProps{
   introduction:Introduction;
@@ -35,13 +44,7 @@ export function Home(props:HomeProps){
           color2:'#b761ad',
           color3:'#8b75b6'
         }}>
-          <FlexBox>
-            <FlexBasis basis="45%">
-              <h2>{knowledge.title}</h2>
-              <p>{knowledge.description}</p>
-            </FlexBasis>
-            <FlexBox basis="55%" alignItems="center" justifyContent="center">test</FlexBox>
-          </FlexBox>
+          <KnowledgeSection knowledge={knowledge}/>
         </Section>
       </Wrapper>
     </Container>
