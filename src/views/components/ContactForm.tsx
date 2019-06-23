@@ -2,10 +2,10 @@ import * as React from 'react'
 import styled from 'styled-components';
 import { FlexBox } from './FlexBox';
 import { MultilangContext } from './MultiLangPage';
+import { tablet } from '../utils';
 
 const BaseFormInput = styled.input`
   border: solid 2px rgba(255, 255, 255, 0.25);
-  margin: 0 0.7rem;
   border-radius: 0.25rem;
   background-color: transparent;
   padding: 0.5rem 0.75rem;
@@ -14,11 +14,14 @@ const BaseFormInput = styled.input`
     border-color: #ffe4b4;
     outline:none;
   }
+
+  ${tablet`
+    margin: 0 0.7rem;
+  `}
 `;
 
 const BaseFormTextArea = styled.textarea`
   border: solid 2px rgba(255, 255, 255, 0.25);
-  margin: 0 0.7rem;
   border-radius: 0.25rem;
   background-color: transparent;
   padding: 0.5rem 0.75rem;
@@ -28,6 +31,10 @@ const BaseFormTextArea = styled.textarea`
     border-color: #ffe4b4;
     outline:none;
   }
+
+  ${tablet`
+    margin: 0 0.7rem;
+  `}
 `;
 
 const BaseSubmitButton =  styled.input.attrs({
@@ -36,12 +43,18 @@ const BaseSubmitButton =  styled.input.attrs({
   border-radius: 0.25rem
   background-color: white;
   padding: .7rem 1.5rem;
-  margin: 1.5rem 0.7rem 0;
+  margin: 1.5rem 0 0;
+  ${tablet`
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+  `}
 `;
 
 const LabelText = styled.span`
-  margin: 0 0.7rem;
-  margin-bottom: 0.5rem;
+  ${tablet`
+    margin: 0 0.7rem;
+    margin-bottom: 0.5rem;
+  `}
 `;
 
 interface FormInputProps{
@@ -53,19 +66,32 @@ interface FormInputProps{
   name:string;
 }
 
-function FormInput(props:FormInputProps){
+const FormInputContainer = styled(FlexBox)`
+  width: 100%;
+  margin: 1.5rem 0 0 0;
+  &:first-child{
+    margin: 0;
+  }
+  ${tablet`
+    &:first-child{
+      margin: 1.5rem 0 0 0;
+    }
+    width: ${(props) => props.width || 'auto'}
+  `}
+`;
 
+function FormInput(props:FormInputProps){
   if(props.type === 'textarea'){
-    return <FlexBox as="label" directiom="column" margin={props.margin} width={props.width || '50%'}>
+    return <FormInputContainer as="label" directiom="column" margin={props.margin} width={props.width || '50%'}>
       <LabelText>{props.label}</LabelText>
       <BaseFormTextArea rows={6} id={props.id} name={props.name}/>
-    </FlexBox>
+    </FormInputContainer>
   }
 
-  return <FlexBox as="label" directiom="column" width={props.width || '50%'}>
+  return <FormInputContainer as="label" directiom="column" width={props.width || '50%'}>
     <LabelText>{props.label}</LabelText>
     <BaseFormInput type={props.type} id={props.id} name={props.name}/>
-  </FlexBox>
+  </FormInputContainer>
 }
 
 export function ContactForm(){
@@ -75,6 +101,8 @@ export function ContactForm(){
     <FormInput label={t('form.name','Nome')} type="text" id="form@name" name="name"/>
     <FormInput label={t('form.email','Email')} type="email" id="form@email" name="email"/>
     <FormInput label={t('form.Message','Mensagem')} margin="2rem 0 0 0" width="100%" type="textarea" id="form@message" name="message"/>
-    <BaseSubmitButton value={t('form.send','Enviar mensagem')}/>
+    <FlexBox>
+      <BaseSubmitButton value={t('form.send','Enviar mensagem')}/>
+    </FlexBox>
   </FlexBox>
 }

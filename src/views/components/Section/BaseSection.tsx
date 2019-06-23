@@ -4,13 +4,13 @@ export const BaseSection = styled.section<{
   width?: string;
   zIndex?: number;
 }> `
-  padding: 2.8875rem 1.75rem 1.3875rem 1.75rem;
+  padding: 2.8875rem 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   ${props=>props.zIndex? `z-index:${props.zIndex}`:''}
   ${tablet`
-    padding: 3.5rem 3.5rem 2rem 3.5rem;
+    padding: 3.5rem;
     width: ${({ width }) => width ? width : '37.5rem'};
   `}
 `;

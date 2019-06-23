@@ -11,9 +11,12 @@ import {
   KnowledgeSection,
   ProjectsSection,
   Projects,
-  ContactForm
+  ContactForm,
+  Socials,
+  SectionDivider
 } from '../components';
 import { Introduction,About,Knowledge, ProjectsText,Project, Contact } from '../../interfaces'
+import { FlexBox } from '../components/FlexBox';
 
 interface HomeProps{
   introduction:Introduction;
@@ -57,12 +60,15 @@ export function Home(props:HomeProps){
           <h2>{contact.title}</h2>
           <p>{contact.description}</p>
         </Section>
-        <Section type={SectionType.gradient} width="50rem" gradientOptions={{
+        <Section type={SectionType.gradient} width="60rem" gradientOptions={{
           color1:'#463a5d',
           color2:'#60567f',
           color3:'#955db9'
         }}>
-          <ContactForm/>
+          <SectionDivider>
+            <ContactForm/>
+            <Socials/>
+          </SectionDivider>
         </Section>
       </Wrapper>
     </Container>
