@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import { tablet } from '../../utils';
 export const GroupContainer = styled.div<{
   width: string;
+  mobileHegith?:string;
 }> `
   display:flex;
   flex-wrap: wrap;
-  height: 50rem;
+  height: ${({mobileHegith})=>mobileHegith? mobileHegith:'50rem'};
   width: 100%;
   ${tablet`
     height: auto;

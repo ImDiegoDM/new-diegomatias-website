@@ -8,7 +8,7 @@ interface Group1Props{
 }
 
 export function Group1(props: Group1Props) {
-  return <GroupContainer width="25rem">
+  return <GroupContainer width="25rem" mobileHegith="30rem">
     <ProjectImage width="100%" height="100%" src={props.project.img1} />
   </GroupContainer>;
 }
