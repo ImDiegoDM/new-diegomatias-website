@@ -3,7 +3,7 @@ import { componentToString } from '../../render';
 import * as React from 'react';
 import { Home } from '../../views/pages';
 import { getIntroduction,getAbout, getKnowledge } from '../../model'
-import { Introduction, MultiLang } from '../../interfaces';
+import { Introduction, MultiLang, Project, ProjectsText as IProjectsText } from '../../interfaces';
 import { getProjects } from '../../model/projects';
 
 function getMultiLang<T = any>(req:Request,resorce:MultiLang<T>):T{
@@ -24,18 +24,20 @@ function Knowledge(req:Request){
   return getMultiLang(req,getKnowledge());
 }
 
-function ProjectsText(req:Request){
-  return getMultiLang(req,getProjects().texts);
+function ProjectsText(req:Request):[IProjectsText,Project[]]{
+  const p = getProjects();
+  return [getMultiLang(req,p.texts),p.projects];
 }
 
 export function Get(req:Request,res:Response){
   const introduction = Introduction(req);
   const about = About(req);
   const knowledge = Knowledge(req);
-  const projectsText = ProjectsText(req);
+  const [projectsText,projects] = ProjectsText(req);
 
   const html = componentToString(<Home 
     projectsText={projectsText} 
+    projects={projects}
     about={about} 
     knowledge={knowledge} 
     introduction={introduction}/>,{

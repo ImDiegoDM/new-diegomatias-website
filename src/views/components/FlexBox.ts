@@ -8,6 +8,8 @@ type FlexDirecton =  'row'|'row-reverse'|'column'|'column-reverse'|'initial'|'in
 
 type JustifyContent =  'flex-start'|'flex-end'|'center'|'space-between'|'space-around'|'initial'|'inherit';
 
+type FlexWrap = 'nowrap'|'wrap'|'wrap-reverse'|'initial'|'inherit';
+
 export interface FlexBoxProps {
   alignItems?: AlignItems;
   alignContent?: AlignContet;
@@ -16,6 +18,7 @@ export interface FlexBoxProps {
   height?: string;
   width?: string;
   basis?:string;
+  wrap?: FlexWrap;
 }
 
 export const FlexBox = styled.div<FlexBoxProps>`
@@ -27,4 +30,5 @@ export const FlexBox = styled.div<FlexBoxProps>`
   height: ${(props) => props.height || 'auto'}
   width: ${(props) => props.width || 'auto'}
   flex-basis: ${({basis}) => basis || 'auto'}
+  flex-wrap: ${({wrap}) => wrap || 'nowrap'}
 `;

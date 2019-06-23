@@ -14,11 +14,7 @@ const defaultValue = {
   color3: 'rgba(255, 228, 180, 0.25)'
 }
 
-export function overlayGradient(options:overlayGradientOptions){
-  /*const grany = (options.grainyFactor ? options.grainyFactor:1)*128
-  const color1 =  options.color1? options.color1:'rgba(114, 97, 147, 0.25)';
-  const color2 =  options.color2? options.color2:'rgba(227, 123, 124, 0.25)';
-  const color3 =  options.color1? options.color1:'rgba(255, 228, 180, 0.25)'*/
+export function overlayGradient(options?:overlayGradientOptions){
   options = {...defaultValue,...options}
   const grainy = (options.grainyFactor ? options.grainyFactor:1)*128
 

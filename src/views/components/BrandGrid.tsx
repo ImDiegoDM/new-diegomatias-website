@@ -58,8 +58,8 @@ export function BrandGrid(props:BrandGridProps){
 
   return <Ul size={`calc( ( ${cellsize} * ${columns} ) + ( ${margin} * ${columns-1}  ) )`}>{
     props.children.map((element,i)=>(
-      <li>
-        <CircleContainer 
+      <li key={i}>
+        <CircleContainer
           as="span" 
           alignItems="center" 
           marginLeft={i % columns == 0 ? '0':margin}

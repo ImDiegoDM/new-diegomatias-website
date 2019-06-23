@@ -9,19 +9,21 @@ import {
   SectionType, 
   BrandGrid,
   KnowledgeSection,
-  ProjectsSection
+  ProjectsSection,
+  Projects
 } from '../components';
-import { Introduction,About,Knowledge, ProjectsText } from '../../interfaces'
+import { Introduction,About,Knowledge, ProjectsText,Project } from '../../interfaces'
 
 interface HomeProps{
   introduction:Introduction;
   about:About;
   knowledge:Knowledge;
   projectsText:ProjectsText;
+  projects:Project[];
 }
 
 export function Home(props:HomeProps){
-  const { introduction,about,knowledge,projectsText } = props;
+  const { introduction,about,knowledge,projectsText,projects } = props;
   return <>
     <GlobalStyle/>
     <Container>
@@ -44,6 +46,7 @@ export function Home(props:HomeProps){
         </Section>
         <KnowledgeSection knowledge={knowledge}/>
         <ProjectsSection projectsText={projectsText} />
+        <Projects projects={projects}/>
       </Wrapper>
     </Container>
   </>
