@@ -1,0 +1,14 @@
+{
+  "pt-br":{
+    "form.name":"Nome",
+    "form.message":"Mensagem",
+    "form.email":"Email",
+    "form.send":"Enviar mensagem"
+  },
+  "en-us":{
+    "form.name":"Name",
+    "form.message":"Message",
+    "form.email":"Email",
+    "form.send":"Send message"
+  }
+}

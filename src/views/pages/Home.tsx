@@ -10,9 +10,10 @@ import {
   BrandGrid,
   KnowledgeSection,
   ProjectsSection,
-  Projects
+  Projects,
+  ContactForm
 } from '../components';
-import { Introduction,About,Knowledge, ProjectsText,Project } from '../../interfaces'
+import { Introduction,About,Knowledge, ProjectsText,Project, Contact } from '../../interfaces'
 
 interface HomeProps{
   introduction:Introduction;
@@ -20,10 +21,11 @@ interface HomeProps{
   knowledge:Knowledge;
   projectsText:ProjectsText;
   projects:Project[];
+  contact: Contact;
 }
 
 export function Home(props:HomeProps){
-  const { introduction,about,knowledge,projectsText,projects } = props;
+  const { introduction,about,knowledge,projectsText,projects,contact } = props;
   return <>
     <GlobalStyle/>
     <Container>
@@ -47,6 +49,21 @@ export function Home(props:HomeProps){
         <KnowledgeSection knowledge={knowledge}/>
         <ProjectsSection projectsText={projectsText} />
         <Projects projects={projects}/>
+        <Section type={SectionType.gradient} width="18rem" gradientOptions={{
+          color1:'#55496b',
+          color2:'#6f6789',
+          color3:'#9974b1'
+        }}>
+          <h2>{contact.title}</h2>
+          <p>{contact.description}</p>
+        </Section>
+        <Section type={SectionType.gradient} width="50rem" gradientOptions={{
+          color1:'#463a5d',
+          color2:'#60567f',
+          color3:'#955db9'
+        }}>
+          <ContactForm/>
+        </Section>
       </Wrapper>
     </Container>
   </>

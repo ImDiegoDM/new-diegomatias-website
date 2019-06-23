@@ -2,9 +2,10 @@ import { Request,Response } from 'express'
 import { componentToString } from '../../render';
 import * as React from 'react';
 import { Home } from '../../views/pages';
-import { getIntroduction,getAbout, getKnowledge } from '../../model'
+import { getIntroduction,getAbout, getKnowledge, getContact } from '../../model'
 import { Introduction, MultiLang, Project, ProjectsText as IProjectsText } from '../../interfaces';
 import { getProjects } from '../../model/projects';
+import { MultiLangPage } from '../../views/components/MultiLangPage';
 
 function getMultiLang<T = any>(req:Request,resorce:MultiLang<T>):T{
   const lang=req.query.lang ? req.query.lang:"pt-br"
@@ -29,18 +30,29 @@ function ProjectsText(req:Request):[IProjectsText,Project[]]{
   return [getMultiLang(req,p.texts),p.projects];
 }
 
+function Contact(req:Request){
+  return getMultiLang(req,getContact());
+}
+
 export function Get(req:Request,res:Response){
+  const lang=req.query.lang ? req.query.lang:"pt-br"
+
   const introduction = Introduction(req);
   const about = About(req);
   const knowledge = Knowledge(req);
   const [projectsText,projects] = ProjectsText(req);
+  const contact = Contact(req);
 
-  const html = componentToString(<Home 
-    projectsText={projectsText} 
-    projects={projects}
-    about={about} 
-    knowledge={knowledge} 
-    introduction={introduction}/>,{
+  const html = componentToString(<MultiLangPage lang={lang}>
+      <Home 
+      contact={contact}
+      projectsText={projectsText} 
+      projects={projects}
+      about={about} 
+      knowledge={knowledge} 
+      introduction={introduction}/>
+    </MultiLangPage>
+    ,{
     title:'Diego Matias de Oliveira',
     description:'Website portifolio de Diego Matias'
   })
