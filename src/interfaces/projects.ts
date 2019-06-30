@@ -6,6 +6,7 @@ export interface ProjectsText{
 }
 
 export interface Project{
+  id:string;
   name:string;
   description:MultiLang<string>;
   img1:string;

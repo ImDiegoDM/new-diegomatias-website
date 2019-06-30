@@ -47,16 +47,16 @@ const Group4SmallImg = styled(Group4BaseImg)`
 export function Group4(props: Group4) {
   return <GroupContainer width="50rem">
     <Group4BigImg>
-      <GalleryImg url={props.p1.img1} />
+      <GalleryImg data-type="gallery-selector" data-target={props.p1.id} url={props.p1.img1} />
     </Group4BigImg>
     <Group4SmallImg>
-      <GalleryImg url={props.p2.img1} />
+      <GalleryImg data-type="gallery-selector" data-target={props.p2.id} url={props.p2.img1} />
     </Group4SmallImg>
     <Group4SmallImg>
-      <GalleryImg url={props.p3.img1} />
+      <GalleryImg data-type="gallery-selector" data-target={props.p3.id} url={props.p3.img1} />
     </Group4SmallImg>
     <Group4BigImg>
-      <GalleryImg url={props.p4.img1} />
+      <GalleryImg data-type="gallery-selector" data-target={props.p4.id} url={props.p4.img1} />
     </Group4BigImg>
   </GroupContainer>;
 }

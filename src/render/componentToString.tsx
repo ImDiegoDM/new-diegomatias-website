@@ -4,7 +4,7 @@ import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
 import { TemplateOptions } from '.';
 import { dom } from '@fortawesome/fontawesome-svg-core'
 
-export function componentToString(element:React.ReactNode,options:TemplateOptions){
+export function componentToString(element:React.ReactNode,options:TemplateOptions,scripts?:string[]){
   const sheet = new ServerStyleSheet();
   const content = renderToString(
     <StyleSheetManager sheet={sheet.instance}>
@@ -27,6 +27,8 @@ export function componentToString(element:React.ReactNode,options:TemplateOption
     </head>
     <body>
       ${content}
+
+      ${scripts ? scripts.map(s=>`<script src="${s}" defer></script>`).reduce((acc,curr)=>acc+curr):''}
     </body>
   </html>
   `

@@ -56,11 +56,12 @@ interface ProjectImageProps{
   height:string;
   src:string;
   className?:string;
+  target?:string
 }
 
 export function ProjectImage(props:ProjectImageProps){
   return <ProjectImageContainer className={props.className} width={props.width} height={props.height}>
-    <GalleryImg url={props.src}/>
+    <GalleryImg data-type="gallery-selector" data-target={props.target} url={props.src}/>
   </ProjectImageContainer>
 }
 

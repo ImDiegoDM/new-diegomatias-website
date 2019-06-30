@@ -1,5 +1,5 @@
 import * as React from 'react'
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import { Project } from '../../../interfaces';
 import { FlexBox } from '../FlexBox';
 import { ProjectImages } from './ProjectImages';
@@ -41,12 +41,22 @@ const ExitIcon = styled(FontAwesomeIcon)`
   cursor: pointer;
 `;
 
+const show = keyframes`
+  from{
+    opacity:0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity:1;
+  }
+`;
+
 export function ProjectDescription(props:ProjectDescriptionProps){
   const {translateObject} = React.useContext(MultilangContext)
   
-  return <ProjectDescriptionContainer style={{display:'none'}}>
-    <ExitIcon icon={faTimes} size="2x"/>
-    <FlexBox width="100%" padding="10px" directiom="column" basis="50%">
+  return <ProjectDescriptionContainer data-type="project-description" data-target={props.project.id} style={{display:'none'}}>
+    <ExitIcon data-type="project-description-exit" data-target={props.project.id} icon={faTimes} size="2x"/>
+    <FlexBox animation={css`${show} 1s forwards ease-in-out`} width="100%" padding="10px" directiom="column" basis="50%">
       <h2>{props.project.name}</h2>
       <p>{translateObject(props.project.description)}</p>
     </FlexBox>

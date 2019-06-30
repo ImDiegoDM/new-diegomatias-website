@@ -55,7 +55,7 @@ export function Get(req:Request,res:Response){
     ,{
     title:'Diego Matias de Oliveira',
     description:'Website portifolio de Diego Matias'
-  })
+  },['https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js','public/js/home.js'])
 
   res.send(html);
 }

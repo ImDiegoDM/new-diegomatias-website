@@ -21,6 +21,7 @@ export interface FlexBoxProps {
   wrap?: FlexWrap;
   margin?: string;
   padding?: string;
+  animation?: any;
 }
 
 export const FlexBox = styled.div<FlexBoxProps>`
@@ -35,4 +36,5 @@ export const FlexBox = styled.div<FlexBoxProps>`
   flex-wrap: ${({wrap}) => wrap || 'nowrap'}
   margin: ${({margin}) => margin || '0'}
   padding: ${({padding}) => padding || '0'}
+  animation: ${({animation}) => animation || 'none 0 ease 0 1 normal none running'}
 `;

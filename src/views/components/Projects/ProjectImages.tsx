@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Project } from '../../../interfaces';
-import styled from 'styled-components';
+import styled, { keyframes,css } from 'styled-components';
 import { FlexBox } from '../FlexBox';
 import { GalleryImg } from './GalleryImg';
 import { tablet } from '../../utils';
@@ -32,10 +32,18 @@ const ChoseImg = styled.div<{
     margin-left:0;
   }
 `
-
+const show = keyframes`
+  from{
+    opacity:0;
+    transform: translateY(20px);
+  }
+  to{
+    opacity:1;
+  }
+`;
 
 export function ProjectImages(props:ProjectImagesProps){
-  return <FlexBox  directiom="column">
+  return <FlexBox animation={css`${show} 1s forwards ease-in-out`} directiom="column">
     <FlexBox>
       <div>
         <Img src={props.project.img1} />
