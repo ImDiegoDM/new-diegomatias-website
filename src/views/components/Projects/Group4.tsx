@@ -1,7 +1,7 @@
 import { Project } from '../../../interfaces';
 import styled from 'styled-components';
 import { overlayGradient, tablet } from '../../utils';
-import { Img } from './Img';
+import { GalleryImg } from './GalleryImg';
 import { GroupContainer } from './GroupContainer';
 import * as React from 'react';
 
@@ -47,16 +47,16 @@ const Group4SmallImg = styled(Group4BaseImg)`
 export function Group4(props: Group4) {
   return <GroupContainer width="50rem">
     <Group4BigImg>
-      <Img src={props.p1.img1} />
+      <GalleryImg url={props.p1.img1} />
     </Group4BigImg>
     <Group4SmallImg>
-      <Img src={props.p2.img1} />
+      <GalleryImg url={props.p2.img1} />
     </Group4SmallImg>
     <Group4SmallImg>
-      <Img src={props.p3.img1} />
+      <GalleryImg url={props.p3.img1} />
     </Group4SmallImg>
     <Group4BigImg>
-      <Img src={props.p4.img1} />
+      <GalleryImg url={props.p4.img1} />
     </Group4BigImg>
   </GroupContainer>;
 }

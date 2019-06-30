@@ -40,6 +40,10 @@
     "projects":[
       {
         "name":"Project 1",
+        "description":{
+          "pt-br": "Portugues Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "en-us": "Ingles Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
         "img1":"public/image1.jpg",
         "img2":"public/image2.jpg",
         "img3":"public/image3.jpg",
@@ -47,6 +51,10 @@
       },
       {
         "name":"Project 2",
+        "description":{
+          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
         "img1":"public/image2.jpg",
         "img2":"public/image2.jpg",
         "img3":"public/image3.jpg",
@@ -54,6 +62,10 @@
       },
       {
         "name":"Project 3",
+        "description":{
+          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
         "img1":"public/image3.jpg",
         "img2":"public/image2.jpg",
         "img3":"public/image3.jpg",
@@ -61,6 +73,10 @@
       },
       {
         "name":"Project 4",
+        "description":{
+          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
         "img1":"public/image1.jpg",
         "img2":"public/image2.jpg",
         "img3":"public/image3.jpg",
@@ -68,6 +84,10 @@
       },
       {
         "name":"Project 4",
+        "description":{
+          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
         "img1":"public/image1.jpg",
         "img2":"public/image2.jpg",
         "img3":"public/image3.jpg",
@@ -75,6 +95,10 @@
       },
       {
         "name":"Project 4",
+        "description":{
+          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
         "img1":"public/image1.jpg",
         "img2":"public/image2.jpg",
         "img3":"public/image3.jpg",

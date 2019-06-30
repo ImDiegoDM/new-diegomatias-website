@@ -1,6 +1,6 @@
 import * as React from 'react'
 import { Project } from '../../../interfaces';
-import { Img } from './Img';
+import { GalleryImg } from './GalleryImg';
 import { ProjectImageContainer } from './ProjectImageContainer';
 import { Group4 } from './Group4';
 import { Group3T1, Group3T2 } from './Group3';
@@ -60,7 +60,7 @@ interface ProjectImageProps{
 
 export function ProjectImage(props:ProjectImageProps){
   return <ProjectImageContainer className={props.className} width={props.width} height={props.height}>
-    <Img src={props.src}/>
+    <GalleryImg url={props.src}/>
   </ProjectImageContainer>
 }
 

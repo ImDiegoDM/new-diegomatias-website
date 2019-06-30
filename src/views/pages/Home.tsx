@@ -17,6 +17,7 @@ import {
 } from '../components';
 import { Introduction,About,Knowledge, ProjectsText,Project, Contact } from '../../interfaces'
 import { FlexBox } from '../components/FlexBox';
+import { ProjectsDescriptions } from '../components/Projects/ProjectDescription';
 
 interface HomeProps{
   introduction:Introduction;
@@ -72,5 +73,6 @@ export function Home(props:HomeProps){
         </Section>
       </Wrapper>
     </Container>
+    <ProjectsDescriptions projects={projects}/>
   </>
 }

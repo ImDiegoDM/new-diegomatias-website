@@ -20,6 +20,7 @@ export interface FlexBoxProps {
   basis?:string;
   wrap?: FlexWrap;
   margin?: string;
+  padding?: string;
 }
 
 export const FlexBox = styled.div<FlexBoxProps>`
@@ -33,4 +34,5 @@ export const FlexBox = styled.div<FlexBoxProps>`
   flex-basis: ${({basis}) => basis || 'auto'}
   flex-wrap: ${({wrap}) => wrap || 'nowrap'}
   margin: ${({margin}) => margin || '0'}
+  padding: ${({padding}) => padding || '0'}
 `;
