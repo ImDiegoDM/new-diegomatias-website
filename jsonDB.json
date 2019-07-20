@@ -7,7 +7,7 @@
     },
     "en":{
       "title":"Diego Matias - Software Architect",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus dignissim turpis, id aliquet leo ultrices sit amet.",
+      "description":"Software Engineer/Architect, focused on the best pratics and in constant learning.",
       "imageUrl":"public/introduction.jpg"
     }
   },
@@ -15,6 +15,11 @@
     "pt":{
       "title":"Um pouco sobre mim",
       "description":"Comecei minha jornada como desenvolvedor em 2011 quando entrei para o curso de jogos digitais na PUC Minas onde peguei gosto pelo desenvolvimento, formado em 2016 na mesma epoca em que comecei a atuar profissionalmente descobri e me aprimorei na area de desenvolvimento web chegando a desenvolver webapps em diversas linguagens, atualmente cursando uma pos graduação em Arquitetura de Software também pela PUC Minas estou sempre em busca de conhecimento e não devo para por ae",
+      "imageUrl":"public/apple-code-codes-574069.jpg"
+    },
+    "en":{
+      "title":"About me",
+      "description":"I started my journey as developer around 2011 when i start the Game Developer course in the Brazilian university PUC Minas, where i discover my passion for development, finishing the course in 2016 in the same time i started to work professionally in the field, since then i learned a lot about web development which is the field that i work today, currently i'm in a course of Software Architecture also by the Brazilian University PUC Minas.",
       "imageUrl":"public/apple-code-codes-574069.jpg"
     }
   },
@@ -34,12 +39,32 @@
         "Vanilla Javascript",
         ".Net Core"
       ]
+    },
+    "en":{
+      "title":"Main knowledge",
+      "description":"My main knowledges resid but it's not limited to the following technologies:",
+      "knowledges":[
+        "Nodejs",
+        "Reactjs",
+        "Golang",
+        "Docker",
+        "PHP",
+        "Unity3D",
+        "Angular 1 e 5",
+        "webgl",
+        "Vanilla Javascript",
+        ".Net Core"
+      ]
     }
   },
   "contact":{
     "pt":{
       "title":"Entre em contato",
       "description":"Tem algum projeto em mente e precisa de um Engenheiro de software ou Arquiteto?, entre em contato e vamos tornar esse projeto realidade."
+    },
+    "en":{
+      "title":"Contact",
+      "description":"Has some project in mynd and need un Software Engineer or Software Architect?, get in touch and let's make this project reality."
     }
   },
   "projects":{
@@ -47,15 +72,19 @@
       "pt":{
         "title":"Projetos",
         "description":"Projetos nos quais eu fiz parte, ou desenvolvi do começo ao fim."
+      },
+      "en":{
+        "title":"Projects",
+        "description":"Projects in which I have been part, or developed from beginning to end."
       }
     },
     "projects":[
       {
         "id":"p1",
-        "name":"Project 1",
+        "name":"Arcerlor Mital",
         "description":{
           "pt": "Este projeto reuniu um conjuto de games para uma feira de estagio, todos eles feitos em Unity3D por mim",
-          "en": "Ingles Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "This project gather un collection of games that i made for an internship fair, all this games were made in Unity3D"
         },
         "img1":"public/projects/arcelor-mittal/3.png",
         "img2":"public/projects/arcelor-mittal/2.png",
@@ -64,22 +93,23 @@
       },
       {
         "id":"p2",
-        "name":"Project 2",
+        "name":"Arena",
         "description":{
           "pt": "Projeto de conclusão de curso na pucminas, este foi um game do tipo MOBA(Multiplayer Online Battle Arena) desenvolvido em Unity3D, neste projeto eu participei em granda parte da programação e em algumas animações",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "This was a completion project for the Game Developer course that i did, this game was a MOBA developed in Unity3D, i worked on a lot of the programming and in some animations."
         },
         "img1":"public/projects/arena/arnea.jpg",
         "img2":"public/projects/arena/arnea.jpg",
         "img3":"public/projects/arena/arnea.jpg",
-        "img4":"public/projects/arena/arnea.jpg"
+        "img4":"public/projects/arena/arnea.jpg",
+        "videoURL":"https://www.youtube.com/embed/2NhLPHmefww"
       },
       {
         "id":"p3",
         "name":"BS Apresentação",
         "description":{
           "pt": "Apresentação interativa desenvolvida com Electron, Javascript e angular",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Interactive presentation developed with Electron and angularjs"
         },
         "img1":"public/projects/bs/1.jpeg",
         "img2":"public/projects/bs/2.jpeg",
@@ -91,7 +121,7 @@
         "name":"Caça Compass",
         "description":{
           "pt": "App para uma ação interna nas fabricas da fiat onde o usuario devia passar por pontos escondidos da fabrica para encontrar certas peças do compass e ganhar premios, este projeto foi desenvolvido com Java no Android Studio",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "This was a intern event that ocurred on fiat factories here in brazil where the user should pass for especific points of the factory to gain parts of the car, when he complet the car he could gain a promotional gift, this project was developed with Java in the Android Studio"
         },
         "img1":"public/projects/caca-compass/1.jpg",
         "img2":"public/projects/caca-compass/2.jpg",
@@ -103,7 +133,7 @@
         "name":"Caminho Tropical",
         "description":{
           "pt": "Ação interativa na qual o usuario deveria escolher um caminho se o caminho fosse o caminho correto ele ganhava um premio, esta ação foi desenvolvida com Unity3D",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Interactive event in which the user should choose a path, if that path was the correct path the user earn some promotional gifts, this project was developed with Unity3D"
         },
         "img1":"public/projects/caminho-tropical/1.png",
         "img2":"public/projects/caminho-tropical/2.png",
@@ -115,7 +145,7 @@
         "name":"Ciclo Ecológico",
         "description":{
           "pt": "Jogo no qual o jogador deveria arremessar o lixo na sua correta lixeira, este projeto foi desenvolvido com Unity3D",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Game in which the user should throw a garbage into the correct trash can, this game was developed with Unity3D"
         },
         "img1":"public/projects/ciclo-ecologico/1.png",
         "img2":"public/projects/ciclo-ecologico/2.png",
@@ -127,7 +157,7 @@
         "name":"MMG Website",
         "description":{
           "pt": "Website responsivo desenvolvido com Angular",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Responsive website made with Angular"
         },
         "img1":"public/projects/mmg/1.png",
         "img2":"public/projects/mmg/2.png",
@@ -139,7 +169,7 @@
         "name":"Nova Safra",
         "description":{
           "pt": "Jogo da memoria feito com unity3d",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Memory game made with Unity3D"
         },
         "img1":"public/projects/nova-safra/1.png",
         "img2":"public/projects/nova-safra/2.png",
@@ -151,7 +181,7 @@
         "name":"Odin Runner",
         "description":{
           "pt": "Odin Runner foi um game desenvolvido para o final de ano da Pro Produtores, este game foi feito todo em unity3D",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Odin Runner was a game developed to a end year event, this game was developed with Unity3D"
         },
         "img1":"public/projects/odin-runner/1.jpg",
         "img2":"public/projects/odin-runner/2.jpg",
@@ -162,8 +192,8 @@
         "id":"p11",
         "name":"Pro File Manager",
         "description":{
-          "pt": "Sistema de armazenamento temporario de arquivos em um servidor para a distribuição dos mesmos para clientes, este sistema foi desenvolvido com Laravel na parte do servidor e Angularjs na parte do front end os dois feitos por mim.",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "pt": "Sistema de armazenamento temporário de arquivos em um servidor para a distribuição dos mesmos para clientes, este sistema foi desenvolvido com Laravel na parte do servidor e Angularjs na parte do front end os dois feitos por mim.",
+          "en": "This project is webapp that temporary save files in a server for distribution of this files among the clients"
         },
         "img1":"public/projects/pro-file-manager/1.png",
         "img2":"public/projects/pro-file-manager/2.png",
@@ -175,7 +205,7 @@
         "name":"Pro Mascote",
         "description":{
           "pt": "Cartão de visita com realidade virtual e interativo da Pro Produtores desenvolvido com unity3D e vuforia.",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Business Card with virtual reality and interactivity, this project was developed with Unity3D and vuforia"
         },
         "img1":"public/projects/pro-mascote/1.png",
         "img2":"public/projects/pro-mascote/2.png"
@@ -185,7 +215,7 @@
         "name":"Talent card",
         "description":{
           "pt": "Projeto de realidade virtual desenvolvido com unity3D e vuforia.",
-          "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+          "en": "Virtual Reality project made with unity3D and vuforia"
         },
         "img1":"public/projects/talent-card/02.png",
         "img2":"public/projects/talent-card/01.png",

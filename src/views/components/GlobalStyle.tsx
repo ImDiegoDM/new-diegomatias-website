@@ -53,7 +53,6 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: scroll;
     width:100%;
     display: flex;
-    align-items: center;
     justify-content: flex-start;
     height: auto;
     color: rgba(255, 255, 255, 0.875);
@@ -62,6 +61,8 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
+    flex-direction: column;
+    align-items: flex-end;
     
     &:after{
       pointer-events: none;
@@ -81,7 +82,8 @@ export const GlobalStyle = createGlobalStyle`
     }
     ${tablet`
       height:100%;
-    
+      flex-direction: row;
+      align-items: center;
     `}
   }
 
@@ -167,5 +169,7 @@ export const GlobalStyle = createGlobalStyle`
       transform: scale(1.5);
     }
   }
+
+
   
 `;

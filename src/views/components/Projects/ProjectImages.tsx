@@ -47,6 +47,25 @@ const show = keyframes`
   }
 `;
 
+interface ProjectVideoProps{
+  videoURL:string;
+}
+
+const IFrame = styled.iframe`
+  width: 100%;
+  height:100%;
+`;
+
+<iframe width="560" height="315" ></iframe>
+
+export function ProjectVideo(props:ProjectVideoProps){
+  return <FlexBox style={{ width: '90vmin',height: '60vmin'}} animation={css`${show} 1s forwards ease-in-out`} directiom="column">
+    <IFrame
+      src={props.videoURL} >
+      </IFrame>
+  </FlexBox>
+}
+
 export function ProjectImages(props:ProjectImagesProps){
   return <FlexBox animation={css`${show} 1s forwards ease-in-out`} directiom="column">
     <FlexBox>

@@ -2,7 +2,7 @@ import * as React from 'react'
 import styled, { css, keyframes } from 'styled-components';
 import { Project } from '../../../interfaces';
 import { FlexBox } from '../FlexBox';
-import { ProjectImages } from './ProjectImages';
+import { ProjectImages, ProjectVideo } from './ProjectImages';
 import { MultilangContext } from '../MultiLangPage';
 import { tablet } from '../../utils';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -62,7 +62,8 @@ export function ProjectDescription(props:ProjectDescriptionProps){
       <h2>{props.project.name}</h2>
       <p>{translateObject(props.project.description)}</p>
     </FlexBox>
-    <ProjectImages project={props.project}/>
+    {!props.project.videoURL && <ProjectImages project={props.project}/>}
+    { props.project.videoURL && <ProjectVideo videoURL={props.project.videoURL}/>}
   </ProjectDescriptionContainer>
 }
 

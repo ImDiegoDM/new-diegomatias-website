@@ -1,18 +1,25 @@
 import * as React from 'react'
 import styled from 'styled-components';
 import { BR } from './SVGFlags/br';
+import { tablet } from '../utils';
 
 const Container = styled.div`
-  position: fixed;
-  top: 10px;
-  right: 20px;
   color: #705f8e;
+  z-index: 5;
+  padding-right: 1rem;
 
   & a{
     text-decoration: none;
     color: inherit;
     font-weight: bold;
   }
+
+  ${tablet`
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    padding-right: 0;
+  `}
 `;
 
 export function SelectLang(){
