@@ -1,11 +1,11 @@
 {
-  "pt-br":{
+  "pt":{
     "form.name":"Nome",
     "form.message":"Mensagem",
     "form.email":"Email",
     "form.send":"Enviar mensagem"
   },
-  "en-us":{
+  "en":{
     "form.name":"Name",
     "form.message":"Message",
     "form.email":"Email",

@@ -18,6 +18,6 @@ export function configTObject(lang:string){
       return object[lang]
     }
 
-    return object["pt-br"]
+    return object["pt"]
   }
 }

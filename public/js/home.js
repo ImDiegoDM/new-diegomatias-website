@@ -32,7 +32,6 @@ $(document).ready(function(){
   })
 
   $('body').on('mouseleave',function(){
-    console.log('mouse exit')
     mouseDown = undefined;
     dragging = false;
   })
@@ -53,7 +52,6 @@ $(document).ready(function(){
   });
 
   function remainingMove(amount,direction){
-    console.log(amount)
     const resistence = .1;
     amount = amount*100;
     if(amount>0.01 && !mouseDown){
@@ -77,7 +75,6 @@ $(document).ready(function(){
     const selector = '[data-type="project-description"][data-target="'+project+'"]';
     $(selector).css('display','')
 
-    console.log('clicked on '+project)
   });
 
   // Project Exit handler
@@ -86,8 +83,6 @@ $(document).ready(function(){
 
     const selector = '[data-type="project-description"][data-target="'+project+'"]';
     $(selector).css('display','none')
-
-    console.log('clicked on '+project)
   });
 
   // move screen on x axis
@@ -117,5 +112,31 @@ $(document).ready(function(){
     const url = $(this).attr('data-url');
 
     previewElement.attr('src',url);
+  })
+
+  // on contact submit
+  $('[data-type="contact-form"]').submit(function(e){
+    e.preventDefault()
+
+    const data={}
+    $(this).find('input,textarea').each(function(){
+      if($(this).attr('type') === 'submit'){
+        return
+      }
+
+      data[$(this).attr('name')] = $(this).val()
+    });
+
+    $(this).css('display','none')
+    $('[data-type="loading.message"]').css('display','')
+
+    $.post('./contact',data).done(function() {
+      $('[data-type="success.message"]').css('display','')
+    }).fail(function() {
+      $('[data-type="error.message"]').css('display','')
+    }).always(function() {
+      $('[data-type="loading.message"]').css('display','none')
+    })
+
   })
 })

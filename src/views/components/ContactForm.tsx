@@ -4,7 +4,7 @@ import { FlexBox } from './FlexBox';
 import { MultilangContext } from './MultiLangPage';
 import { tablet } from '../utils';
 
-const BaseFormInput = styled.input`
+const BaseFormInput = styled.input.attrs({required:true})`
   border: solid 2px rgba(255, 255, 255, 0.25);
   border-radius: 0.25rem;
   background-color: transparent;
@@ -20,7 +20,7 @@ const BaseFormInput = styled.input`
   `}
 `;
 
-const BaseFormTextArea = styled.textarea`
+const BaseFormTextArea = styled.textarea.attrs({required:true})`
   border: solid 2px rgba(255, 255, 255, 0.25);
   border-radius: 0.25rem;
   background-color: transparent;
@@ -97,10 +97,10 @@ function FormInput(props:FormInputProps){
 export function ContactForm(){
   const {t} = React.useContext(MultilangContext)
 
-  return <FlexBox as="form" wrap="wrap">
+  return <FlexBox data-type="contact-form" as="form" wrap="wrap">
     <FormInput label={t('form.name','Nome')} type="text" id="form@name" name="name"/>
     <FormInput label={t('form.email','Email')} type="email" id="form@email" name="email"/>
-    <FormInput label={t('form.Message','Mensagem')} margin="2rem 0 0 0" width="100%" type="textarea" id="form@message" name="message"/>
+    <FormInput label={t('form.message','Mensagem')} margin="2rem 0 0 0" width="100%" type="textarea" id="form@message" name="message"/>
     <FlexBox>
       <BaseSubmitButton value={t('form.send','Enviar mensagem')}/>
     </FlexBox>

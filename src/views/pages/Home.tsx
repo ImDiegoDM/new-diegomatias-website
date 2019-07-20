@@ -18,6 +18,10 @@ import {
 import { Introduction,About,Knowledge, ProjectsText,Project, Contact } from '../../interfaces'
 import { FlexBox } from '../components/FlexBox';
 import { ProjectsDescriptions } from '../components/Projects/ProjectDescription';
+import { LoadingForm } from '../components/LoadingForm';
+import { ErrorMessage } from '../components/ErrorMessage';
+import { SuccessMessage } from '../components/SuccessMessage';
+import { SelectLang } from '../components/SelectLang';
 
 interface HomeProps{
   introduction:Introduction;
@@ -32,6 +36,7 @@ export function Home(props:HomeProps){
   const { introduction,about,knowledge,projectsText,projects,contact } = props;
   return <>
     <GlobalStyle/>
+    <SelectLang/>
     <Container>
       <Wrapper>
         <BannerSection imageUrl={introduction.imageUrl} type={SectionType.gradient}>
@@ -68,6 +73,9 @@ export function Home(props:HomeProps){
         }}>
           <SectionDivider>
             <ContactForm/>
+            <LoadingForm/>
+            <SuccessMessage/>
+            <ErrorMessage/>
             <Socials/>
           </SectionDivider>
         </Section>

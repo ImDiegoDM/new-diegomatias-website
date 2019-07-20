@@ -8,9 +8,9 @@ import { getProjects } from '../../model/projects';
 import { MultiLangPage } from '../../views/components/MultiLangPage';
 
 function getMultiLang<T = any>(req:Request,resorce:MultiLang<T>):T{
-  const lang=req.query.lang ? req.query.lang:"pt-br"
+  const lang=req.query.lang ? req.query.lang:"pt"
 
-  return resorce[lang] ? resorce[lang] : resorce["pt-br"] ;
+  return resorce[lang] ? resorce[lang] : resorce["pt"] ;
 }
 
 function Introduction(req:Request){
@@ -35,7 +35,7 @@ function Contact(req:Request){
 }
 
 export function Get(req:Request,res:Response){
-  const lang=req.query.lang ? req.query.lang:"pt-br"
+  const lang=req.query.lang ? req.query.lang:"pt"
 
   const introduction = Introduction(req);
   const about = About(req);
