@@ -5,6 +5,11 @@ export const GlobalStyle = createGlobalStyle`
   html {
     font-family: 'Roboto', sans-serif;
     font-size: 12pt;
+    -ms-overflow-style: none;  // IE 10+
+    &::-webkit-scrollbar {
+      display: none; // Safari and Chrome
+    }
+
     ${tablet`
       font-size: 1.5vmax;
       height:100%;
@@ -12,6 +17,10 @@ export const GlobalStyle = createGlobalStyle`
     ${desktop`
       font-size: 1.1vmax;
     `}
+  }
+
+  p{
+    font-size: 1rem;
   }
 
   h1 {
@@ -34,6 +43,14 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    overflow-x: scroll;
     width:100%;
     display: flex;
     align-items: center;

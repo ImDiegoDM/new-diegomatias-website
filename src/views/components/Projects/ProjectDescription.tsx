@@ -28,6 +28,7 @@ const ProjectDescriptionContainer = styled.div`
   align-items: center;
   justify-content: center;
   ${tablet`
+    overflow:hidden;
     display:flex;
     flex-direction: row-reverse;
   `}
@@ -39,6 +40,7 @@ const ExitIcon = styled(FontAwesomeIcon)`
   top: 15px;
   right: 25px;
   cursor: pointer;
+  z-index: 10;
 `;
 
 const show = keyframes`

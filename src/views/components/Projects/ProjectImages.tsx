@@ -2,7 +2,6 @@ import * as React from 'react'
 import { Project } from '../../../interfaces';
 import styled, { keyframes,css } from 'styled-components';
 import { FlexBox } from '../FlexBox';
-import { GalleryImg } from './GalleryImg';
 import { tablet } from '../../utils';
 
 interface ProjectImagesProps{
@@ -16,21 +15,27 @@ const Container = styled.div`
 const Img = styled.img`
   width:100%;
   ${tablet`
-    width:50vmax;
+    //max-width:50vmax;
+    max-height: 80vmin;
+    max-width: 50vw;
+    width: auto;
   `}
 `;
 
 const ChoseImg = styled.div<{
   url: string;
 }> `
+  cursor: pointer;
   width: 100%;
   height:100%;
   background-image: url(${({ url }) => url});
   background-size:cover;
+  background-position: center;
   margin-left: 5px;
   &:first-child{
     margin-left:0;
   }
+  
 `
 const show = keyframes`
   from{
@@ -46,14 +51,34 @@ export function ProjectImages(props:ProjectImagesProps){
   return <FlexBox animation={css`${show} 1s forwards ease-in-out`} directiom="column">
     <FlexBox>
       <div>
-        <Img src={props.project.img1} />
+        <Img data-type="project-description-preview" data-project={props.project.id} src={props.project.img1} />
       </div>
     </FlexBox>
     <FlexBox width="100%" height="100px">
-        <ChoseImg url={props.project.img1} />
-        <ChoseImg url={props.project.img2} />
-        <ChoseImg url={props.project.img3} />
-        <ChoseImg url={props.project.img4} />
+        {props.project.img1 && <ChoseImg 
+          data-type="project-description-select-image" 
+          data-project={props.project.id} 
+          data-url={props.project.img1} 
+          url={props.project.img1} 
+        />}
+        {props.project.img2 && <ChoseImg 
+          data-type="project-description-select-image" 
+          data-project={props.project.id} 
+          data-url={props.project.img2} 
+          url={props.project.img2} 
+        />}
+        {props.project.img3 && <ChoseImg 
+          data-type="project-description-select-image" 
+          data-project={props.project.id} 
+          data-url={props.project.img3} 
+          url={props.project.img3} 
+        />}
+        {props.project.img4 && <ChoseImg 
+          data-type="project-description-select-image" 
+          data-project={props.project.id} 
+          data-url={props.project.img4} 
+          url={props.project.img4} 
+        />}
     </FlexBox>
   </FlexBox>
 }

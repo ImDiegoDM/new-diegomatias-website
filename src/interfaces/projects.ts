@@ -9,8 +9,8 @@ export interface Project{
   id:string;
   name:string;
   description:MultiLang<string>;
-  img1:string;
-  img2:string;
-  img3:string;
-  img4:string;
+  img1?:string;
+  img2?:string;
+  img3?:string;
+  img4?:string;
 }

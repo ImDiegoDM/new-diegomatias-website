@@ -1,8 +1,8 @@
 {
   "introduction":{
     "pt-br":{
-      "title":"Diego Matias - Arquiteto de software",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus dignissim turpis, id aliquet leo ultrices sit amet.",
+      "title":"Diego Matias",
+      "description":"Engenheiro/Arquiteto de software, focado nas melhores práticas do mercado, e em constante aprendizado.",
       "imageUrl":"public/introduction.jpg"
     },
     "en-us":{
@@ -14,27 +14,39 @@
   "about":{
     "pt-br":{
       "title":"Um pouco sobre mim",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+      "description":"Comecei minha jornada como desenvolvedor em 2011 quando entrei para o curso de jogos digitais na PUC Minas onde peguei gosto pelo desenvolvimento, formado em 2016 na mesma epoca em que comecei a atuar profissionalmente descobri e me aprimorei na area de desenvolvimento web chegando a desenvolver webapps em diversas linguagens, atualmente cursando uma pos graduação em Arquitetura de Software também pela PUC Minas estou sempre em busca de conhecimento e não devo para por ae",
       "imageUrl":"public/apple-code-codes-574069.jpg"
     }
   },
   "knowledge":{
     "pt-br":{
       "title":"Principais Conhecimentos",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+      "description":"Meus principais conhecimento residem mas não se limitam as seguintes tecnologias: ",
+      "knowledges":[
+        "Nodejs",
+        "Reactjs",
+        "Golang",
+        "Docker",
+        "PHP",
+        "Unity3D",
+        "Angular 1 e 5",
+        "webgl",
+        "Vanilla Javascript",
+        ".Net Core"
+      ]
     }
   },
   "contact":{
     "pt-br":{
       "title":"Entre em contato",
-      "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+      "description":"Tem algum projeto em mente e precisa de um Engenheiro de software ou Arquiteto?, entre em contato e vamos tornar esse projeto realidade."
     }
   },
   "projects":{
     "texts":{
       "pt-br":{
         "title":"Projetos",
-        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        "description":"Projetos nos quais eu fiz parte, ou desenvolvi do começo ao fim."
       }
     },
     "projects":[
@@ -42,73 +54,143 @@
         "id":"p1",
         "name":"Project 1",
         "description":{
-          "pt-br": "Portugues Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "pt-br": "Este projeto reuniu um conjuto de games para uma feira de estagio, todos eles feitos em Unity3D por mim",
           "en-us": "Ingles Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
         },
-        "img1":"public/image1.jpg",
-        "img2":"public/image2.jpg",
-        "img3":"public/image3.jpg",
-        "img4":"public/image3.jpg"
+        "img1":"public/projects/arcelor-mittal/3.png",
+        "img2":"public/projects/arcelor-mittal/2.png",
+        "img3":"public/projects/arcelor-mittal/1.png",
+        "img4":"public/projects/arcelor-mittal/4.png"
       },
       {
         "id":"p2",
         "name":"Project 2",
         "description":{
-          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "pt-br": "Projeto de conclusão de curso na pucminas, este foi um game do tipo MOBA(Multiplayer Online Battle Arena) desenvolvido em Unity3D, neste projeto eu participei em granda parte da programação e em algumas animações",
           "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
         },
-        "img1":"public/image2.jpg",
-        "img2":"public/image2.jpg",
-        "img3":"public/image3.jpg",
-        "img4":"public/image3.jpg"
+        "img1":"public/projects/arena/arnea.jpg",
+        "img2":"public/projects/arena/arnea.jpg",
+        "img3":"public/projects/arena/arnea.jpg",
+        "img4":"public/projects/arena/arnea.jpg"
       },
       {
         "id":"p3",
-        "name":"Project 3",
+        "name":"BS Apresentação",
         "description":{
-          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "pt-br": "Apresentação interativa desenvolvida com Electron, Javascript e angular",
           "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
         },
-        "img1":"public/image3.jpg",
-        "img2":"public/image2.jpg",
-        "img3":"public/image3.jpg",
-        "img4":"public/image3.jpg"
-      },
-      {
-        "id":"p4",
-        "name":"Project 4",
-        "description":{
-          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
-          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
-        },
-        "img1":"public/image1.jpg",
-        "img2":"public/image2.jpg",
-        "img3":"public/image3.jpg",
-        "img4":"public/image3.jpg"
+        "img1":"public/projects/bs/1.jpeg",
+        "img2":"public/projects/bs/2.jpeg",
+        "img3":"public/projects/bs/3.jpeg",
+        "img4":"public/projects/bs/4.jpeg"
       },
       {
         "id":"p5",
-        "name":"Project 4",
+        "name":"Caça Compass",
         "description":{
-          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "pt-br": "App para uma ação interna nas fabricas da fiat onde o usuario devia passar por pontos escondidos da fabrica para encontrar certas peças do compass e ganhar premios, este projeto foi desenvolvido com Java no Android Studio",
           "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
         },
-        "img1":"public/image1.jpg",
-        "img2":"public/image2.jpg",
-        "img3":"public/image3.jpg",
-        "img4":"public/image3.jpg"
+        "img1":"public/projects/caca-compass/1.jpg",
+        "img2":"public/projects/caca-compass/2.jpg",
+        "img3":"public/projects/caca-compass/3.jpg",
+        "img4":"public/projects/caca-compass/4.jpg"
       },
       {
         "id":"p6",
-        "name":"Project 4",
+        "name":"Caminho Tropical",
         "description":{
-          "pt-br": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat.",
+          "pt-br": "Ação interativa na qual o usuario deveria escolher um caminho se o caminho fosse o caminho correto ele ganhava um premio, esta ação foi desenvolvida com Unity3D",
           "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
         },
-        "img1":"public/image1.jpg",
-        "img2":"public/image2.jpg",
-        "img3":"public/image3.jpg",
-        "img4":"public/image3.jpg"
+        "img1":"public/projects/caminho-tropical/1.png",
+        "img2":"public/projects/caminho-tropical/2.png",
+        "img3":"public/projects/caminho-tropical/3.png",
+        "img4":"public/projects/caminho-tropical/4.png"
+      },
+      {
+        "id":"p7",
+        "name":"Ciclo Ecológico",
+        "description":{
+          "pt-br": "Jogo no qual o jogador deveria arremessar o lixo na sua correta lixeira, este projeto foi desenvolvido com Unity3D",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
+        "img1":"public/projects/ciclo-ecologico/1.png",
+        "img2":"public/projects/ciclo-ecologico/2.png",
+        "img3":"public/projects/ciclo-ecologico/3.png",
+        "img4":"public/projects/ciclo-ecologico/4.png"
+      },
+      {
+        "id":"p8",
+        "name":"MMG Website",
+        "description":{
+          "pt-br": "Website responsivo desenvolvido com Angular",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
+        "img1":"public/projects/mmg/1.png",
+        "img2":"public/projects/mmg/2.png",
+        "img3":"public/projects/mmg/3.png",
+        "img4":"public/projects/mmg/4.png"
+      },
+      {
+        "id":"p9",
+        "name":"Nova Safra",
+        "description":{
+          "pt-br": "Jogo da memoria feito com unity3d",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
+        "img1":"public/projects/nova-safra/1.png",
+        "img2":"public/projects/nova-safra/2.png",
+        "img3":"public/projects/nova-safra/3.png",
+        "img4":"public/projects/nova-safra/4.png"
+      },
+      {
+        "id":"p10",
+        "name":"Odin Runner",
+        "description":{
+          "pt-br": "Odin Runner foi um game desenvolvido para o final de ano da Pro Produtores, este game foi feito todo em unity3D",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
+        "img1":"public/projects/odin-runner/1.jpg",
+        "img2":"public/projects/odin-runner/2.jpg",
+        "img3":"public/projects/odin-runner/3.jpg",
+        "img4":"public/projects/odin-runner/4.jpg"
+      },
+      {
+        "id":"p11",
+        "name":"Pro File Manager",
+        "description":{
+          "pt-br": "Sistema de armazenamento temporario de arquivos em um servidor para a distribuição dos mesmos para clientes, este sistema foi desenvolvido com Laravel na parte do servidor e Angularjs na parte do front end os dois feitos por mim.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
+        "img1":"public/projects/pro-file-manager/1.png",
+        "img2":"public/projects/pro-file-manager/2.png",
+        "img3":"public/projects/pro-file-manager/3.png",
+        "img4":"public/projects/pro-file-manager/4.png"
+      },
+      {
+        "id":"p12",
+        "name":"Pro Mascote",
+        "description":{
+          "pt-br": "Cartão de visita com realidade virtual e interativo da Pro Produtores desenvolvido com unity3D e vuforia.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
+        "img1":"public/projects/pro-mascote/1.png",
+        "img2":"public/projects/pro-mascote/2.png"
+      },
+      {
+        "id":"p13",
+        "name":"Talent card",
+        "description":{
+          "pt-br": "Projeto de realidade virtual desenvolvido com unity3D e vuforia.",
+          "en-us": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tellus sem, vehicula eget egestas vel, condimentum eget est. In hac habitasse platea dictumst. Curabitur ultrices consectetur nisi at iaculis. Pellentesque efficitur fringilla neque quis vehicula. Proin nec venenatis nulla. Ut ultrices venenatis venenatis. Cras enim lacus, finibus ut cursus a, interdum ut tellus. Suspendisse placerat sed enim quis placerat."
+        },
+        "img1":"public/projects/talent-card/02.png",
+        "img2":"public/projects/talent-card/01.png",
+        "img3":"public/projects/talent-card/03.png",
+        "img4":"public/projects/talent-card/04.jpg"
       }
     ]
   }

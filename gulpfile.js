@@ -1,6 +1,7 @@
 const { watch,src,series, dest, parallel } = require('gulp');
 const webpack = require('webpack-stream');
 const nodemon = require('gulp-nodemon')
+const fs = require('fs')
 
 const webpackConfig = require('./webpack.config.js')
 const del = require('del');
@@ -22,6 +23,14 @@ function movePublicFolder(){
   return src('./src/public/**').pipe(dest('./dist/public'))
 }
 
+function moveDotEnv(){
+  if(fs.existsSync('./.env')){
+    return src('./.env').pipe(dest('./dist'));
+  }
+
+  return Promise.resolve();
+}
+
 function start(){
   return nodemon({
     script:'./dist/app.js'
@@ -31,6 +40,6 @@ function start(){
 exports.build = build
 exports.clean = clean
 exports.move = movePublicFolder
-exports.start = series(clean,build,movePublicFolder,parallel(watchBuild,start))
+exports.start = series(clean,build,movePublicFolder,moveDotEnv,parallel(watchBuild,start))
 exports.default = series(clean,build)
 

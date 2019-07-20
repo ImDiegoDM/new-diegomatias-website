@@ -7,6 +7,7 @@ export const GalleryImg = styled.div<{
   height:100%;
   background-image: url(${({ url: src }) => src});
   background-size:cover;
+  background-position: center;
 
   &:hover{
     transform: scale(1.1);
