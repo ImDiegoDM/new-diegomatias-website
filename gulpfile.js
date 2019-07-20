@@ -40,6 +40,6 @@ function start(){
 exports.build = build
 exports.clean = clean
 exports.move = movePublicFolder
-exports.start = series(clean,build,movePublicFolder,moveDotEnv,parallel(watchBuild,start))
+exports.dev = series(clean,build,movePublicFolder,moveDotEnv,parallel(watchBuild,start))
 exports.default = series(clean,build,movePublicFolder)
 
