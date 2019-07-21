@@ -28,7 +28,7 @@ export function componentToString(element:React.ReactNode,options:TemplateOption
     <body>
       ${content}
 
-      ${scripts ? scripts.map(s=>`<script src="${s}" defer></script>`).reduce((acc,curr)=>acc+curr):''}
+      ${scripts ? scripts.map(s=>`<script src="${s}"></script>`).reduce((acc,curr)=>acc+curr):''}
     </body>
   </html>
   `
