@@ -1,6 +1,5 @@
 import * as React from 'react'
 import styled from 'styled-components';
-import { BR } from './SVGFlags/br';
 import { tablet } from '../utils';
 
 const Container = styled.div`
