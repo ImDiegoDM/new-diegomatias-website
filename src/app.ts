@@ -8,12 +8,12 @@ import * as https from 'https'
 
 dotenv.config()
 
-console.log(process.env.SMTP_HOST)
-
 const app = express()
 const port = process.env.PORT || 3000;
 
 const mode = process.env.NODE_ENV || 'development';
+
+console.log(process.env.NODE_ENV)
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -45,7 +45,7 @@ if(mode === 'production'){
   // Starting both http & https servers
   const httpServer = http.createServer(redirectApp);
   const httpsServer = https.createServer(credentials, app);
-  
+
   httpServer.listen(80, () => {
     console.log('Redirect running on port 80');
   });
