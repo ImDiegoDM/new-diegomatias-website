@@ -1,6 +1,8 @@
 import * as React from 'react'
 import styled from 'styled-components';
 import { FlexBox } from './FlexBox';
+import { mobileL } from '../utils';
+import { mobileS } from '../utils/mobileS';
 
 const CircleContainer = styled(FlexBox)<{size:string,marginLeft:string,marginTop:string}>`
   border-radius: 50%;
@@ -51,24 +53,62 @@ interface BrandGridProps{
   columns?:number;
 }
 
+const ShowOnMobileLGreater = styled.div`
+  display:none;
+  ${mobileL`
+    display:block;
+  `}
+`
+
+const ShowOnMobileL = styled.div`
+  display:none;
+  ${mobileS`
+    display:block;
+  `}
+  ${mobileL`
+    display:none;
+  `}
+`
+
 export function BrandGrid(props:BrandGridProps){
   const cellsize = props.cellSize || '5rem';
   const columns = props.columns || 3;
   const margin = props.margin || '2rem';
 
-  return <Ul size={`calc( ( ${cellsize} * ${columns} ) + ( ${margin} * ${columns-1}  ) )`}>{
-    props.children.map((element,i)=>(
-      <li key={i}>
-        <CircleContainer
-          as="span" 
-          alignItems="center" 
-          marginLeft={i % columns == 0 ? '0':margin}
-          marginTop={i > (columns-1) ? margin:'0'}
-          justifyContent="center" 
-          size={cellsize}>
-          {element}
-        </CircleContainer>
-      </li>
-    ))
-  }</Ul>
+  return <>
+    <ShowOnMobileLGreater>
+      <Ul size={`calc( ( ${cellsize} * ${columns} ) + ( ${margin} * ${columns-1}  ) )`}>{
+        props.children.map((element,i)=>(
+          <li key={i}>
+            <CircleContainer
+              as="span" 
+              alignItems="center" 
+              marginLeft={i % columns == 0 ? '0':margin}
+              marginTop={i > (columns-1) ? margin:'0'}
+              justifyContent="center" 
+              size={cellsize}>
+              {element}
+            </CircleContainer>
+          </li>
+        ))
+      }</Ul>
+    </ShowOnMobileLGreater>
+    <ShowOnMobileL>
+      <Ul size={`calc( ( ${cellsize} * ${2} ) + ( ${margin} * ${2-1}  ) )`}>{
+        props.children.map((element,i)=>(
+          <li key={i}>
+            <CircleContainer
+              as="span" 
+              alignItems="center" 
+              marginLeft={i % 2 == 0 ? '0':margin}
+              marginTop={i > (2-1) ? margin:'0'}
+              justifyContent="center" 
+              size={cellsize}>
+              {element}
+            </CircleContainer>
+          </li>
+        ))
+      }</Ul>
+    </ShowOnMobileL>
+  </>
 }

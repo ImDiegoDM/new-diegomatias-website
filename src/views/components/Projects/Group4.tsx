@@ -1,6 +1,6 @@
 import { Project } from '../../../interfaces';
 import styled from 'styled-components';
-import { overlayGradient, tablet } from '../../utils';
+import { overlayGradient, tablet, mobileL } from '../../utils';
 import { GalleryImg } from './GalleryImg';
 import { GroupContainer } from './GroupContainer';
 import * as React from 'react';
@@ -37,8 +37,12 @@ const Group4BigImg = styled(Group4BaseImg)`
   `}
 `;
 const Group4SmallImg = styled(Group4BaseImg)`
-  width:50%;
   height: calc( 100% / 3 );
+  width:100%;
+  ${mobileL`
+    width:50%;
+  `}
+
   ${tablet`
     width:30%;
     height: 50%;
