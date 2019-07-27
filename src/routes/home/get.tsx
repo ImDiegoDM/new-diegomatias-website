@@ -6,6 +6,7 @@ import { getIntroduction,getAbout, getKnowledge, getContact } from '../../model'
 import { Introduction, MultiLang, Project, ProjectsText as IProjectsText } from '../../interfaces';
 import { getProjects } from '../../model/projects';
 import { MultiLangPage } from '../../views/components/MultiLangPage';
+import { configTFunc } from '../../views/utils/translate';
 
 function getMultiLang<T = any>(req:Request,resorce:MultiLang<T>):T{
   const lang=req.query.lang ? req.query.lang:"pt"
@@ -43,6 +44,8 @@ export function Get(req:Request,res:Response){
   const [projectsText,projects] = ProjectsText(req);
   const contact = Contact(req);
 
+  const t = configTFunc(lang);
+
   const html = componentToString(<MultiLangPage lang={lang}>
       <Home 
       contact={contact}
@@ -53,8 +56,8 @@ export function Get(req:Request,res:Response){
       introduction={introduction}/>
     </MultiLangPage>
     ,{
-    title:'Diego Matias de Oliveira',
-    description:'Website portifolio de Diego Matias'
+    title:t('website.title','Diego Matias de Oliveira'),
+    description:t('website.description','Website portifólio de Diego Matias')
   },['https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js','public/js/home.js'])
 
   res.send(html);

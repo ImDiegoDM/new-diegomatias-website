@@ -5,7 +5,8 @@
   "main": "dist/app.js",
   "scripts": {
     "start": "gulp && node ./dist/app.js",
-    "webpack": "webpack"
+    "webpack": "webpack",
+    "dev":"gulp dev"
   },
   "author": "Diego Matias",
   "license": "ISC",

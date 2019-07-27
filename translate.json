@@ -1,5 +1,7 @@
 {
   "pt":{
+    "website.title":"Diego Matias de Oliveira",
+    "website.description":"Website portifólio de Diego Matias",
     "form.name":"Nome",
     "form.message":"Mensagem",
     "form.email":"Email",
@@ -9,6 +11,8 @@
     "success.message":"Mensagem enviada com sucesso!"
   },
   "en":{
+    "website.title":"Diego M. Oliveira",
+    "website.description":"Website/Portfolio of Diego M. Oliveira",
     "form.name":"Name",
     "form.message":"Message",
     "form.email":"Email",

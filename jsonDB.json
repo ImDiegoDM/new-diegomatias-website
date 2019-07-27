@@ -6,7 +6,7 @@
       "imageUrl":"public/introduction.jpg"
     },
     "en":{
-      "title":"Diego Matias - Software Architect",
+      "title":"Diego Matias",
       "description":"Software Engineer/Architect, focused on the best pratics and in constant learning.",
       "imageUrl":"public/introduction.jpg"
     }
@@ -14,12 +14,12 @@
   "about":{
     "pt":{
       "title":"Um pouco sobre mim",
-      "description":"Comecei minha jornada como desenvolvedor em 2011 quando entrei para o curso de jogos digitais na PUC Minas onde peguei gosto pelo desenvolvimento, formado em 2016 na mesma epoca em que comecei a atuar profissionalmente descobri e me aprimorei na area de desenvolvimento web chegando a desenvolver webapps em diversas linguagens, atualmente cursando uma pos graduação em Arquitetura de Software também pela PUC Minas estou sempre em busca de conhecimento e não devo para por ae",
+      "description":"Comecei minha jornada como desenvolvedor em 2011 quando iniciei curso de jogos digitais na PUC Minas. Me formei em 2016 época em que comecei a atuar profissionalmente me aprimorando na área de desenvolvimento web chegando a desenvolver webapps em diversas linguagens. Atualmente cursando uma pós graduação em Arquitetura de Software também pela PUC Minas. Gosto muito do que faço e estou sempre a procura de novos conhecimentos e habilidades que me ajudem a crescer nesta área incrível.",
       "imageUrl":"public/apple-code-codes-574069.jpg"
     },
     "en":{
       "title":"About me",
-      "description":"I started my journey as developer around 2011 when i start the Game Developer course in the Brazilian university PUC Minas, where i discover my passion for development, finishing the course in 2016 in the same time i started to work professionally in the field, since then i learned a lot about web development which is the field that i work today, currently i'm in a course of Software Architecture also by the Brazilian University PUC Minas.",
+      "description":"I started my journey as developer around 2011 when i started the Game Developer course in the Brazilian university PUC Minas, where i discover my passion for development, finishing the course in 2016 in the same time i started to work professionally in the field, since then i learned a lot about web development which is the field that i work today, currently i'm in a course of Software Architecture also by the Brazilian University PUC Minas.",
       "imageUrl":"public/apple-code-codes-574069.jpg"
     }
   },
@@ -60,7 +60,7 @@
   "contact":{
     "pt":{
       "title":"Entre em contato",
-      "description":"Tem algum projeto em mente e precisa de um Engenheiro de software ou Arquiteto?, entre em contato e vamos tornar esse projeto realidade."
+      "description":"Tem algum projeto em mente e precisa de um Engenheiro de software ou Arquiteto?. Entre em contato e vamos tornar esse projeto realidade."
     },
     "en":{
       "title":"Contact",
