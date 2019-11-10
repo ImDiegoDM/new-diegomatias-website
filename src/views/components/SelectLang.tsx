@@ -23,7 +23,7 @@ const Container = styled.div`
 
 export function SelectLang(){
   return <Container>
-    <a href="?lang=pt">Protuguês</a>&nbsp;|&nbsp;
+    <a href="?lang=pt">Português</a>&nbsp;|&nbsp;
     <a href="?lang=en">English</a>
   </Container>
 }
