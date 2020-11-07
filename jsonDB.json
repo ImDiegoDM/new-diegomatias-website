@@ -2,24 +2,24 @@
   "introduction":{
     "pt":{
       "title":"Diego Matias",
-      "description":"Engenheiro/Arquiteto de software, focado nas melhores práticas do mercado, e em constante aprendizado.",
+      "description":"Engenheiro de software focado nas melhores práticas de desenvolvimento para entregar softwares de alta qualidade, seguros e manuteníveis, formado em Desenvolvimento de jogos e com mais de 4 anos trabalhando com tecnologias web, eu estou em constante aprendizado e sempre tentando importar estes conhecimentos para aumentar a qualidade dos softwares nos quais eu trabalho",
       "imageUrl":"public/introduction.jpg"
     },
     "en":{
       "title":"Diego Matias",
-      "description":"Software Engineer/Architect, focused on the best pratics and in constant learning.",
+      "description":"Software Engineer/Full Stack developer focused on the best development practices for delivering high-quality, secure and reliable softwares, with Game development background and 4 years working with web based applications, I'm in constant learning and trying to import this knowledge to improve the software that I'm working on",
       "imageUrl":"public/introduction.jpg"
     }
   },
   "about":{
     "pt":{
       "title":"Um pouco sobre mim",
-      "description":"Comecei minha jornada como desenvolvedor em 2011 quando iniciei curso de jogos digitais na PUC Minas. Me formei em 2016 época em que comecei a atuar profissionalmente me aprimorando na área de desenvolvimento web chegando a desenvolver webapps em diversas linguagens. Atualmente cursando uma pós graduação em Arquitetura de Software também pela PUC Minas. Gosto muito do que faço e estou sempre a procura de novos conhecimentos e habilidades que me ajudem a crescer nesta área incrível.",
+      "description":"Comecei minha jornada como desenvolvedor em 2011 quando comecei minha graduação em Jogos digitais pela PUC Minas, lá eu descobri minha paixão pelo desenvolvimento, terminando o curso em 2016 eu comecei a trabalhar profissionalmente fazendo alguns jogos pequenos para eventos, contudo eu comecei a aprender sobre desenvolvimento web para ajudar meus colegas de trabalho, eventualmente eu mudei para empresas onde eu trabalhei apenas com desenvolvimento web e para me aprimorar eu fiz uma pos-graduaçao em Arquitetura de Software em 2018-2019, hoje em dia eu trabalho como Engenheiro de Software usando tecnologias web",
       "imageUrl":"public/apple-code-codes-574069.jpg"
     },
     "en":{
       "title":"About me",
-      "description":"I started my journey as developer around 2011 when i started the Game Developer course in the Brazilian university PUC Minas, where i discover my passion for development, finishing the course in 2016 in the same time i started to work professionally in the field, since then i learned a lot about web development which is the field that i work today, currently i'm in a course of Software Architecture also by the Brazilian University PUC Minas.",
+      "description":"I started my journey as developer around 2011 when I started a Game Development course in the Brazilian university PUC Minas, in there I discovered my passion for development, finishing the course in 2016 I started to work professionally making some small games for events here in brazil, in that time I started to learn web development to help my coworkers, eventually I moved to companies that work only with web development and to improve even more my knowledge I did a Software Architecture course in 2018-2019, nowadays I’m a Software engineer working only with web technologies",
       "imageUrl":"public/apple-code-codes-574069.jpg"
     }
   },
@@ -42,18 +42,17 @@
     },
     "en":{
       "title":"Main knowledge",
-      "description":"My main knowledges resid but it's not limited to the following technologies:",
+      "description":"My main knowledges resid but it's not limited by the following technologies:",
       "knowledges":[
         "Nodejs",
         "Reactjs",
         "Golang",
         "Docker",
-        "PHP",
+        "Vuejs",
         "Unity3D",
-        "Angular 1 e 5",
-        "webgl",
-        "Vanilla Javascript",
-        ".Net Core"
+        "Webgl",
+        "Javascript",
+        ".Net"
       ]
     }
   },
