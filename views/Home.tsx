@@ -1,0 +1,79 @@
+import * as React from 'react'
+import { 
+  GlobalStyle,
+  Container,
+  Wrapper,
+  Section,
+  BannerSection,
+  FlexBasis,
+  SectionType, 
+  BrandGrid,
+  KnowledgeSection,
+  ProjectsSection,
+  Projects,
+  ContactForm,
+  Socials,
+  SectionDivider
+} from '../components';
+import { Introduction,About,Knowledge, ProjectsText,Project, Contact } from '../interfaces'
+import { introduction, about, knowledge, contact, projects } from '@/db'
+import { FlexBox } from '../components/FlexBox';
+import { ProjectsDescriptions } from '../components/Projects/ProjectDescription';
+import { LoadingForm } from '../components/LoadingForm';
+import { ErrorMessage } from '../components/ErrorMessage';
+import { SuccessMessage } from '../components/SuccessMessage';
+import { SelectLang } from '../components/SelectLang';
+import { MultilangContext } from '@/contexts';
+
+export function Home(){
+  const { lang } = React.useContext(MultilangContext)
+  return <>
+    <GlobalStyle/>
+    <SelectLang/>
+    <Container>
+      <Wrapper>
+        <BannerSection imageUrl={introduction[lang].imageUrl} type={SectionType.gradient}>
+          <h1>{introduction[lang].title}</h1>
+          <p>{introduction[lang].description}</p>
+        </BannerSection>
+        <Section type={SectionType.image} width="30rem" imageOptions={{
+          imageUrl:about[lang].imageUrl,
+          overlay:true,
+          imageWidth:'55rem',
+          flexEnd:true,
+          color1:'rgba(86, 73, 111, 0.57)',
+          color2:'rgba(124, 60, 60, 0.56)',
+          color3:'rgba(177, 142, 82, 0.36)'
+        }}>
+          <h2>{about[lang].title}</h2>
+          <p>{about[lang].description}</p>
+        </Section>
+        <KnowledgeSection knowledge={knowledge[lang]}/>
+        <ProjectsSection projectsText={projects.texts[lang]} />
+        <Projects projects={projects.projects}/>
+        <Section type={SectionType.gradient} width="18rem" gradientOptions={{
+          color1:'#55496b',
+          color2:'#6f6789',
+          color3:'#9974b1'
+        }}>
+          <h2>{contact[lang].title}</h2>
+          <p>{contact[lang].description}</p>
+        </Section>
+        <Section type={SectionType.gradient} width="60rem" gradientOptions={{
+          color1:'#463a5d',
+          color2:'#60567f',
+          color3:'#955db9'
+        }}>
+          <SectionDivider>
+            <ContactForm/>
+            <LoadingForm/>
+            <SuccessMessage/>
+            <ErrorMessage/>
+            <Socials/>
+          </SectionDivider>
+        </Section>
+      </Wrapper>
+    </Container>
+    <ProjectsDescriptions projects={projects.projects}/>
+  </>
+}
