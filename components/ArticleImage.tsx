@@ -38,7 +38,6 @@ export function ArticleImage(props:ArticleImageProps){
     width={props.width} 
     height={props.height}
     as="a"
-    //@ts-ignore
     href={props.href} target="_blank"
   >
     <GalleryImg url={props.src}/>

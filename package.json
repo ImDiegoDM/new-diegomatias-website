@@ -4,9 +4,10 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
-    "start": "gulp && node ./dist/app.js",
+    "start": "next start",
     "webpack": "webpack",
-    "dev": "next dev"
+    "dev": "next dev",
+    "build": "next build"
   },
   "author": "Diego Matias",
   "license": "ISC",

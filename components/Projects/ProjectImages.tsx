@@ -1,16 +1,12 @@
 import * as React from 'react'
-import { Project } from '../../../interfaces';
+import { Project } from '@/interfaces';
 import styled, { keyframes,css } from 'styled-components';
 import { FlexBox } from '../FlexBox';
-import { tablet } from '../../utils';
+import { tablet } from '@/utils';
 
 interface ProjectImagesProps{
   project:Project;
 }
-
-const Container = styled.div`
-  
-`;
 
 const Img = styled.img`
   width:100%;

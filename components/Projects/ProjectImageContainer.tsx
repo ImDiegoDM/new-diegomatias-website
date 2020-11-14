@@ -3,6 +3,8 @@ import { overlayGradient, mobileL } from '../../utils';
 interface ProjectImageContainerProps {
   width: string;
   height: string;
+  href?:string;
+  target?: string;
 }
 export const ProjectImageContainer = styled.div<ProjectImageContainerProps> `
   position: relative;

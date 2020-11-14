@@ -74,8 +74,5 @@ export interface ProjectsDescriptionsProps{
 
 export function ProjectsDescriptions(props:ProjectsDescriptionsProps){
   return <>
-    {props.projects.map(project=>(
-      <ProjectDescription project={project}/>
-    ))}
   </>
 }
