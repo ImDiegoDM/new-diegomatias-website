@@ -51,7 +51,6 @@ export const GlobalStyle = createGlobalStyle`
     user-select: none;
 
     overflow-x: scroll;
-    width:100%;
     display: flex;
     justify-content: flex-start;
     height: auto;

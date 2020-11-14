@@ -6,7 +6,15 @@ export const about = {
   },
   "en":{
     "title":"About me",
-    "description":"I started my journey as developer around 2011 when I started a Game Development course in the Brazilian university PUC Minas, in there I discovered my passion for development, finishing the course in 2016 I started to work professionally making some small games for events here in brazil, in that time I started to learn web development to help my coworkers, eventually I moved to companies that work only with web development and to improve even more my knowledge I did a Software Architecture course in 2018-2019, nowadays I’m a Software engineer working only with web technologies",
+    description:`I'm Brazilian, living and working in Brazil as a 
+    Software engineer/Full stack developer. My journey as a developer started around
+    2011 when i enrolled in a Game Development course at the Brazilian University PUC Minas.
+    There I discovered my passion for development and after finishing the course in 2016,
+    I started to work professionally, making some small games for events. At the time, I started
+    to learn web development to help my coworkers, 
+    since then I learned a lot and moved to companies that mainly work with web development technologies.
+    I also did a Software Architecture course in 2018-2019, which improved my knowledge even more.
+    `,
     "imageUrl":"apple-code-codes-574069.jpg"
   }
 }

@@ -23,8 +23,10 @@ import { SuccessMessage } from '../components/SuccessMessage';
 import { SelectLang } from '../components/SelectLang';
 import { MultilangContext } from '@/contexts';
 import { Bezier, Vector2 } from '@/utils'
+import services from '@/services'
+import { Articles } from '@/components/Articles';
 
-const WHEEL_AMOUNT = 100
+const WHEEL_AMOUNT = 0.5
 
 const bezier = new Bezier(
   new Vector2(0,1),
@@ -51,6 +53,8 @@ export function Home(){
   let startTime:Date = null
   let endTime:Date = null
   let stopDrag = false
+  const [moved, setMoved] = React.useState(false) 
+  const [posts, setPosts] = React.useState([])
 
   React.useEffect(()=>{
     html = document.querySelector('html')
@@ -67,12 +71,12 @@ export function Home(){
       html.removeEventListener('mouseup',mouseUp)
       html.removeEventListener('mouseleave',mouseLeave)
     }
-  })
+  },[])
 
   function onScroll(e){
     console.log(e)
     const wheelDelta = e.wheelDelta
-    const direction = (wheelDelta / Math.abs(wheelDelta)) * -1;
+    const direction = wheelDelta * -1;
     const amount = direction*WHEEL_AMOUNT
     moveScreen(amount)
   }
@@ -90,15 +94,20 @@ export function Home(){
     startTime = new Date()
   }
 
-  function mouseUp(event) {
+  function mouseUp(event:MouseEvent) {
+    setMoved(false)
     endTime = new Date()
     isMouseDown = false
     stopDrag = false
     const energiStored = startPosition - event.clientX
-    let timeSince = (endTime.getTime() - startTime.getTime()) / 40
+    console.log(energiStored)
+    if (Math.abs(energiStored) > 0.01){
+      event.preventDefault()
+      event.stopPropagation()
+    }
+    let timeSince = (endTime.getTime() - startTime.getTime()) / 45
     timeSince = Math.pow(timeSince, 2)
     const fEnergy = energiStored/(timeSince)
-    console.log(fEnergy)
     if(Math.abs(fEnergy) > 4){
       drag(fEnergy, 0.2)
     }
@@ -123,6 +132,7 @@ export function Home(){
 
   function mouseMove(event) {
     if(isMouseDown) {
+      setMoved(true)
       const deltaMove = event.clientX - mouseX;
       mouseX = event.clientX;
       moveScreen(deltaMove * -1)
@@ -151,7 +161,7 @@ export function Home(){
         </Section>
         <KnowledgeSection knowledge={translateObject(knowledge)}/>
         <ProjectsSection projectsText={translateObject(projects.texts)} />
-        <Projects projects={projects.projects}/>
+        <Projects projects={projects.projects} moved={moved}/>
         <Section type={SectionType.gradient} width="18rem" gradientOptions={{
           color1:'#55496b',
           color2:'#6f6789',

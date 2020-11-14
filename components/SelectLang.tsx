@@ -23,9 +23,9 @@ const Container = styled.div`
 
 export function SelectLang(){
   return <Container>
-    {langs.map((i,index) => <>
+    {langs.map((i,index) => <span key={index}>
       <a href={`?lang=${i.key}`}>{i.label}</a>
       {(index !== (langs.length -1)) && <>&nbsp;|&nbsp;</>}
-    </>)}
+    </span>)}
   </Container>
 }

@@ -95,7 +95,7 @@ export function Socials(){
         <SocialIconContainer>
           <SocialIcon icon={faMediumM} />
         </SocialIconContainer>
-        <SocialLink href="https://medium.com/@dm.diego.bh">@dm.diego.bh</SocialLink>
+        <SocialLink href="https://medium.com/@diegomatiasoliveira">@diegomatiasoliveira</SocialLink>
       </SocialLi>
       <SocialLi>
         <SocialIconContainer>

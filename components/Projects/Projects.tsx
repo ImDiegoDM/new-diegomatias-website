@@ -9,7 +9,8 @@ import { ProjectDescription } from './ProjectDescription';
 import { Modal } from '@/components/Modal';
 
 interface ProjectsProps{
-  projects:Project[]
+  projects:Project[],
+  moved: boolean
 }
 
 enum ProjectType{
@@ -31,10 +32,17 @@ export function Projects(props:ProjectsProps){
   let i = props.projects.length;
   let seqIndex = 0;
 
+  function handleSetProject(p) {
+    console.log(props.moved)
+    if(!props.moved){
+      setProject(p)
+    }
+  }
+
   while (i>0) {
     const seqToChose = typeSequence[seqIndex]
     if(seqToChose === ProjectType.four && i >= 4){
-      comps.push(<Group4 onSelectProject={setProject} key={i} p1={props.projects[i-1]} p2={props.projects[i-2]} p3={props.projects[i-3]} p4={props.projects[i-4]}/>)
+      comps.push(<Group4 onSelectProject={handleSetProject} key={i} p1={props.projects[i-1]} p2={props.projects[i-2]} p3={props.projects[i-3]} p4={props.projects[i-4]}/>)
       i-=4;
     } else if(seqToChose === ProjectType.three && i >= 3){
       const group = Math.random() * 2
@@ -44,7 +52,7 @@ export function Projects(props:ProjectsProps){
           p1={props.projects[i-1]} 
           p2={props.projects[i-2]} 
           p3={props.projects[i-3]}
-          onSelectProject={setProject}
+          onSelectProject={handleSetProject}
         />)
       }
       else{
@@ -53,12 +61,12 @@ export function Projects(props:ProjectsProps){
           p1={props.projects[i-1]} 
           p2={props.projects[i-2]} 
           p3={props.projects[i-3]}
-          onSelectProject={setProject}
+          onSelectProject={handleSetProject}
         />)
       }
       i-=3;
     } else {
-      comps.push(<Group1 onSelectProject={setProject} key={i} project={props.projects[i-1]}/>)
+      comps.push(<Group1 onSelectProject={handleSetProject} key={i} project={props.projects[i-1]}/>)
       i-=1;
     }
     seqIndex++;
@@ -87,7 +95,7 @@ interface ProjectImageProps{
 
 export function ProjectImage(props:ProjectImageProps){
   return <ProjectImageContainer className={props.className} width={props.width} height={props.height}>
-    <GalleryImg onClick={props.onClick} url={props.src}/>
+    <GalleryImg onMouseUp={props.onClick} url={props.src}/>
   </ProjectImageContainer>
 }
 

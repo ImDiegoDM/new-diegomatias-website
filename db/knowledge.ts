@@ -7,17 +7,16 @@ export const knowledge = {
       "Reactjs",
       "Golang",
       "Docker",
-      "PHP",
+      "Vuejs",
       "Unity3D",
-      "Angular 1 e 5",
-      "webgl",
-      "Vanilla Javascript",
-      ".Net Core"
+      "Webgl",
+      "Javascript",
+      ".Net"
     ]
   },
   "en":{
-    "title":"Main knowledge",
-    "description":"My main knowledges resid but it's not limited by the following technologies:",
+    "title":"Technologies",
+    "description":"These are some of technologies that I'm most familiar with:",
     "knowledges":[
       "Nodejs",
       "Reactjs",

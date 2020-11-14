@@ -6,7 +6,7 @@ export const projects = {
     },
     "en":{
       "title":"Projects",
-      "description":"Projects in which I have been part, or developed from beginning to end."
+      "description":"These are some cool projects that I haved worked on:"
     }
   },
   "projects":[
