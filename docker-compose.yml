@@ -10,4 +10,4 @@ services:
       - "8080:80"
     volumes:
       - ./reverse-proxy.conf:/etc/nginx/conf.d/default.conf:ro
-      - /etc/letsencrypt/live:/etc/letsencrypt/live
+      - /etc/letsencrypt/live/diegomatias.dev/:/etc/letsencrypt/live/diegomatias.dev/
