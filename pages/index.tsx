@@ -2,16 +2,19 @@ import * as React from 'react'
 import { MultiLangPage } from '@/components'
 import { Home } from '@/views'
 import { useRouter } from 'next/router'
+import Head from 'next/head'
+import { Html } from 'next/document'
 
-export default function HomePage() {
-  const router = useRouter()
-  let lang = router.query.lang ? router.query.lang : "pt"
+export default function HomePage(props) {
 
-  if (Array.isArray(lang)){
-    lang = lang[0]
-  }
-
-  return <MultiLangPage lang={lang}>
+  return <MultiLangPage lang={props.query.lang}>
+    <Head>
+      <title> Diego Matias de Oliveira </title>
+    </Head>
     <Home />
   </MultiLangPage>
 }
+
+HomePage.getInitialProps = ({ query }) => {
+  return { query };
+};

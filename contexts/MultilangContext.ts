@@ -4,7 +4,7 @@ import { MultiLang } from '../interfaces';
 
 interface IMultiLangContext{
   t:(key:string,defaultValue:string)=>string
-  translateObject:(object:MultiLang)=>string
+  translateObject:<T = any>(object:MultiLang)=>T
   lang: string
 }
 

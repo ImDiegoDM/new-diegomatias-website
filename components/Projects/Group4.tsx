@@ -1,4 +1,4 @@
-import { Project } from '../../../interfaces';
+import { Project } from '../../interfaces';
 import styled from 'styled-components';
 import { overlayGradient, tablet, mobileL } from '../../utils';
 import { GalleryImg } from './GalleryImg';
@@ -10,6 +10,7 @@ export interface Group4 {
   p2: Project;
   p3: Project;
   p4: Project;
+  onSelectProject: (project: Project) => void
 }
 const Group4BaseImg = styled.div`
   position: relative;
@@ -50,17 +51,17 @@ const Group4SmallImg = styled(Group4BaseImg)`
 `;
 export function Group4(props: Group4) {
   return <GroupContainer width="50rem">
-    <Group4BigImg>
-      <GalleryImg data-type="gallery-selector" data-target={props.p1.id} url={props.p1.img1} />
+    <Group4BigImg onClick={() => props.onSelectProject(props.p1)}>
+      <GalleryImg url={props.p1.img1} />
     </Group4BigImg>
-    <Group4SmallImg>
-      <GalleryImg data-type="gallery-selector" data-target={props.p2.id} url={props.p2.img1} />
+    <Group4SmallImg onClick={() => props.onSelectProject(props.p2)}>
+      <GalleryImg url={props.p2.img1} />
     </Group4SmallImg>
-    <Group4SmallImg>
-      <GalleryImg data-type="gallery-selector" data-target={props.p3.id} url={props.p3.img1} />
+    <Group4SmallImg onClick={() => props.onSelectProject(props.p3)}>
+      <GalleryImg url={props.p3.img1} />
     </Group4SmallImg>
-    <Group4BigImg>
-      <GalleryImg data-type="gallery-selector" data-target={props.p4.id} url={props.p4.img1} />
+    <Group4BigImg onClick={() => props.onSelectProject(props.p4)}>
+      <GalleryImg url={props.p4.img1} />
     </Group4BigImg>
   </GroupContainer>;
 }

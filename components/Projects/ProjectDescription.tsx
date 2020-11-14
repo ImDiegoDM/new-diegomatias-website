@@ -14,14 +14,13 @@ const BG = styled(FlexBox)`
 
 interface ProjectDescriptionProps{
   project:Project;
+  onClickExit: () => void
 }
 
 const ProjectDescriptionContainer = styled.div`
-  position:fixed;
   background-color: rgba(46, 43, 55, 0.875);
-  width:100%;
-  height:100%;
-  top:0;
+  width: 100%;
+  height: 100%;
   z-index: 10;
   padding: 15px;
   overflow-Y: auto;
@@ -56,8 +55,10 @@ const show = keyframes`
 export function ProjectDescription(props:ProjectDescriptionProps){
   const {translateObject} = React.useContext(MultilangContext)
   
-  return <ProjectDescriptionContainer data-type="project-description" data-target={props.project.id} style={{display:'none'}}>
-    <ExitIcon data-type="project-description-exit" data-target={props.project.id} icon={faTimes} size="2x"/>
+  return <ProjectDescriptionContainer>
+    <div onClick={props.onClickExit}>
+      <ExitIcon icon={faTimes} size="2x"/>
+    </div>
     <FlexBox animation={css`${show} 1s forwards ease-in-out`} width="100%" padding="10px" directiom="column" basis="50%">
       <h2>{props.project.name}</h2>
       <p>{translateObject(props.project.description)}</p>
